@@ -1,0 +1,386 @@
+
+File: /workspace/scratch/36caf938433a/roshan-heic/video-native/windows/bin/ffmpeg.exe
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Import {
+  Name: SHELL32.dll
+  ImportLookupTableRVA: 0xE6A3A8
+  ImportAddressTableRVA: 0xE6AD90
+  Symbol: CommandLineToArgvW (0)
+}
+Import {
+  Name: api-ms-win-crt-stdio-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A3B8
+  ImportAddressTableRVA: 0xE6ADA0
+  Symbol: __acrt_iob_func (0)
+  Symbol: __p__commode (0)
+  Symbol: __p__fmode (0)
+  Symbol: __stdio_common_vfprintf (0)
+  Symbol: __stdio_common_vfwprintf (0)
+  Symbol: __stdio_common_vsprintf (0)
+  Symbol: _close (0)
+  Symbol: _dup (0)
+  Symbol: _fileno (0)
+  Symbol: _fseeki64 (0)
+  Symbol: _ftelli64 (0)
+  Symbol: _isatty (0)
+  Symbol: _kbhit (0)
+  Symbol: _lseeki64 (0)
+  Symbol: _read (0)
+  Symbol: _setmode (0)
+  Symbol: _sopen (0)
+  Symbol: _wfopen (0)
+  Symbol: _write (0)
+  Symbol: _wsopen (0)
+  Symbol: fclose (0)
+  Symbol: fflush (0)
+  Symbol: fgets (0)
+  Symbol: fopen (0)
+  Symbol: fputc (0)
+  Symbol: fputs (0)
+  Symbol: fputwc (0)
+  Symbol: fread (0)
+  Symbol: fwrite (0)
+  Symbol: getc (0)
+  Symbol: getchar (0)
+  Symbol: setvbuf (0)
+  Symbol: ungetc (0)
+}
+Import {
+  Name: api-ms-win-crt-runtime-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A4C8
+  ImportAddressTableRVA: 0xE6AEB0
+  Symbol: __p___argc (0)
+  Symbol: __p___argv (0)
+  Symbol: _assert (0)
+  Symbol: _beginthreadex (0)
+  Symbol: _cexit (0)
+  Symbol: _configure_narrow_argv (0)
+  Symbol: _crt_atexit (0)
+  Symbol: _endthreadex (0)
+  Symbol: _errno (0)
+  Symbol: _exit (0)
+  Symbol: _initialize_narrow_environment (0)
+  Symbol: _initterm (0)
+  Symbol: _initterm_e (0)
+  Symbol: _register_thread_local_exe_atexit_callback (0)
+  Symbol: _seh_filter_exe (0)
+  Symbol: _set_app_type (0)
+  Symbol: _set_errno (0)
+  Symbol: _set_invalid_parameter_handler (0)
+  Symbol: abort (0)
+  Symbol: exit (0)
+  Symbol: perror (0)
+  Symbol: signal (0)
+  Symbol: strerror (0)
+}
+Import {
+  Name: api-ms-win-crt-environment-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A588
+  ImportAddressTableRVA: 0xE6AF70
+  Symbol: __p__environ (0)
+  Symbol: _wgetenv (0)
+  Symbol: getenv (0)
+}
+Import {
+  Name: api-ms-win-crt-string-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A5A8
+  ImportAddressTableRVA: 0xE6AF90
+  Symbol: _strdup (0)
+  Symbol: _stricmp (0)
+  Symbol: _strnicmp (0)
+  Symbol: isdigit (0)
+  Symbol: isspace (0)
+  Symbol: isxdigit (0)
+  Symbol: mbrlen (0)
+  Symbol: memset (0)
+  Symbol: strcat (0)
+  Symbol: strcmp (0)
+  Symbol: strcpy (0)
+  Symbol: strcspn (0)
+  Symbol: strlen (0)
+  Symbol: strncmp (0)
+  Symbol: strncpy (0)
+  Symbol: strnlen (0)
+  Symbol: strpbrk (0)
+  Symbol: strspn (0)
+  Symbol: strtok (0)
+  Symbol: tolower (0)
+  Symbol: wcscat (0)
+  Symbol: wcscpy (0)
+  Symbol: wcslen (0)
+  Symbol: wcsnlen (0)
+}
+Import {
+  Name: api-ms-win-crt-locale-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A670
+  ImportAddressTableRVA: 0xE6B058
+  Symbol: ___lc_codepage_func (0)
+  Symbol: ___mb_cur_max_func (0)
+  Symbol: _configthreadlocale (0)
+  Symbol: localeconv (0)
+}
+Import {
+  Name: api-ms-win-crt-time-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A698
+  ImportAddressTableRVA: 0xE6B080
+  Symbol: _ftime64 (0)
+  Symbol: _gmtime64 (0)
+  Symbol: _gmtime64_s (0)
+  Symbol: _localtime64 (0)
+  Symbol: _localtime64_s (0)
+  Symbol: _mktime64 (0)
+  Symbol: _time32 (0)
+  Symbol: _time64 (0)
+  Symbol: clock (0)
+  Symbol: strftime (0)
+}
+Import {
+  Name: api-ms-win-crt-convert-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A6F0
+  ImportAddressTableRVA: 0xE6B0D8
+  Symbol: atoi (0)
+  Symbol: mbrtowc (0)
+  Symbol: mbsrtowcs (0)
+  Symbol: strtof (0)
+  Symbol: strtol (0)
+  Symbol: strtoll (0)
+  Symbol: strtoul (0)
+  Symbol: strtoull (0)
+  Symbol: wcrtomb (0)
+  Symbol: wcstod (0)
+  Symbol: wcstol (0)
+  Symbol: wcstoll (0)
+  Symbol: wcstoul (0)
+  Symbol: wcstoull (0)
+}
+Import {
+  Name: api-ms-win-crt-math-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A768
+  ImportAddressTableRVA: 0xE6B150
+  Symbol: __setusermatherr (0)
+  Symbol: _fdopen (0)
+  Symbol: acos (0)
+  Symbol: asin (0)
+  Symbol: atan (0)
+  Symbol: atan2 (0)
+  Symbol: atan2f (0)
+  Symbol: atanf (0)
+  Symbol: cbrt (0)
+  Symbol: cbrtf (0)
+  Symbol: ceil (0)
+  Symbol: ceilf (0)
+  Symbol: cos (0)
+  Symbol: cosf (0)
+  Symbol: cosh (0)
+  Symbol: exp (0)
+  Symbol: exp2 (0)
+  Symbol: exp2f (0)
+  Symbol: expf (0)
+  Symbol: fabs (0)
+  Symbol: floor (0)
+  Symbol: floorf (0)
+  Symbol: fmaxf (0)
+  Symbol: fmin (0)
+  Symbol: fminf (0)
+  Symbol: fmod (0)
+  Symbol: frexp (0)
+  Symbol: hypot (0)
+  Symbol: log (0)
+  Symbol: log10 (0)
+  Symbol: log10f (0)
+  Symbol: log2 (0)
+  Symbol: log2f (0)
+  Symbol: logf (0)
+  Symbol: lrint (0)
+  Symbol: lrintf (0)
+  Symbol: modf (0)
+  Symbol: nextafter (0)
+  Symbol: pow (0)
+  Symbol: powf (0)
+  Symbol: rint (0)
+  Symbol: round (0)
+  Symbol: roundf (0)
+  Symbol: sin (0)
+  Symbol: sinf (0)
+  Symbol: sinh (0)
+  Symbol: sqrt (0)
+  Symbol: sqrtf (0)
+  Symbol: tan (0)
+  Symbol: tanh (0)
+  Symbol: trunc (0)
+}
+Import {
+  Name: api-ms-win-crt-heap-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A908
+  ImportAddressTableRVA: 0xE6B2F0
+  Symbol: _aligned_free (0)
+  Symbol: _aligned_malloc (0)
+  Symbol: _aligned_realloc (0)
+  Symbol: _set_new_mode (0)
+  Symbol: calloc (0)
+  Symbol: free (0)
+  Symbol: malloc (0)
+  Symbol: realloc (0)
+}
+Import {
+  Name: api-ms-win-crt-private-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A950
+  ImportAddressTableRVA: 0xE6B338
+  Symbol: __intrinsic_setjmp (0)
+  Symbol: longjmp (0)
+  Symbol: memchr (0)
+  Symbol: memcmp (0)
+  Symbol: memcpy (0)
+  Symbol: memmove (0)
+  Symbol: strchr (0)
+  Symbol: strrchr (0)
+  Symbol: strstr (0)
+}
+Import {
+  Name: api-ms-win-crt-utility-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6A9A0
+  ImportAddressTableRVA: 0xE6B388
+  Symbol: bsearch (0)
+  Symbol: qsort (0)
+  Symbol: rand (0)
+  Symbol: rand_s (0)
+}
+Import {
+  Name: KERNEL32.dll
+  ImportLookupTableRVA: 0xE6A9C8
+  ImportAddressTableRVA: 0xE6B3B0
+  Symbol: AcquireSRWLockExclusive (0)
+  Symbol: CloseHandle (0)
+  Symbol: CreateEventA (0)
+  Symbol: CreateEventW (0)
+  Symbol: CreateMutexW (0)
+  Symbol: CreateSemaphoreA (0)
+  Symbol: CreateSemaphoreW (0)
+  Symbol: DeleteCriticalSection (0)
+  Symbol: DuplicateHandle (0)
+  Symbol: EnterCriticalSection (0)
+  Symbol: FileTimeToSystemTime (0)
+  Symbol: FlsAlloc (0)
+  Symbol: FlsGetValue (0)
+  Symbol: FlsSetValue (0)
+  Symbol: GetCommandLineW (0)
+  Symbol: GetConsoleMode (0)
+  Symbol: GetConsoleScreenBufferInfo (0)
+  Symbol: GetCurrentProcess (0)
+  Symbol: GetCurrentProcessId (0)
+  Symbol: GetCurrentThread (0)
+  Symbol: GetCurrentThreadId (0)
+  Symbol: GetFullPathNameW (0)
+  Symbol: GetLastError (0)
+  Symbol: GetModuleFileNameW (0)
+  Symbol: GetModuleHandleA (0)
+  Symbol: GetModuleHandleW (0)
+  Symbol: GetProcAddress (0)
+  Symbol: GetProcessAffinityMask (0)
+  Symbol: GetProcessTimes (0)
+  Symbol: GetStdHandle (0)
+  Symbol: GetSystemTimeAdjustment (0)
+  Symbol: GetSystemTimeAsFileTime (0)
+  Symbol: GetThreadContext (0)
+  Symbol: GetThreadGroupAffinity (0)
+  Symbol: GetThreadId (0)
+  Symbol: GetThreadPriority (0)
+  Symbol: GetThreadTimes (0)
+  Symbol: GetTickCount (0)
+  Symbol: GetTimeZoneInformation (0)
+  Symbol: InitOnceBeginInitialize (0)
+  Symbol: InitOnceComplete (0)
+  Symbol: InitOnceExecuteOnce (0)
+  Symbol: InitializeConditionVariable (0)
+  Symbol: InitializeCriticalSection (0)
+  Symbol: InitializeCriticalSectionAndSpinCount (0)
+  Symbol: InitializeSRWLock (0)
+  Symbol: IsProcessorFeaturePresent (0)
+  Symbol: K32GetProcessMemoryInfo (0)
+  Symbol: LeaveCriticalSection (0)
+  Symbol: LocalFree (0)
+  Symbol: MoveFileExA (0)
+  Symbol: MoveFileExW (0)
+  Symbol: MultiByteToWideChar (0)
+  Symbol: OpenProcess (0)
+  Symbol: OutputDebugStringA (0)
+  Symbol: PeekNamedPipe (0)
+  Symbol: QueryPerformanceCounter (0)
+  Symbol: QueryPerformanceFrequency (0)
+  Symbol: RaiseException (0)
+  Symbol: ReleaseMutex (0)
+  Symbol: ReleaseSRWLockExclusive (0)
+  Symbol: ReleaseSemaphore (0)
+  Symbol: ResetEvent (0)
+  Symbol: ResumeThread (0)
+  Symbol: RtlCaptureContext (0)
+  Symbol: RtlLookupFunctionEntry (0)
+  Symbol: RtlRestoreContext (0)
+  Symbol: RtlUnwindEx (0)
+  Symbol: RtlVirtualUnwind (0)
+  Symbol: SetConsoleCtrlHandler (0)
+  Symbol: SetConsoleTextAttribute (0)
+  Symbol: SetDllDirectoryA (0)
+  Symbol: SetEvent (0)
+  Symbol: SetLastError (0)
+  Symbol: SetProcessAffinityMask (0)
+  Symbol: SetSystemTime (0)
+  Symbol: SetThreadContext (0)
+  Symbol: SetThreadPriority (0)
+  Symbol: SetUnhandledExceptionFilter (0)
+  Symbol: Sleep (0)
+  Symbol: SleepConditionVariableSRW (0)
+  Symbol: SuspendThread (0)
+  Symbol: SwitchToThread (0)
+  Symbol: TerminateProcess (0)
+  Symbol: TlsAlloc (0)
+  Symbol: TlsFree (0)
+  Symbol: TlsGetValue (0)
+  Symbol: TlsSetValue (0)
+  Symbol: TryAcquireSRWLockExclusive (0)
+  Symbol: TryEnterCriticalSection (0)
+  Symbol: VirtualAlloc (0)
+  Symbol: VirtualFree (0)
+  Symbol: VirtualProtect (0)
+  Symbol: VirtualQuery (0)
+  Symbol: WaitForMultipleObjects (0)
+  Symbol: WaitForSingleObject (0)
+  Symbol: WaitForSingleObjectEx (0)
+  Symbol: WakeAllConditionVariable (0)
+  Symbol: WakeConditionVariable (0)
+  Symbol: WideCharToMultiByte (0)
+  Symbol: WriteConsoleW (0)
+}
+Import {
+  Name: api-ms-win-crt-filesystem-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6ACF8
+  ImportAddressTableRVA: 0xE6B6E0
+  Symbol: _access (0)
+  Symbol: _fstat64 (0)
+  Symbol: _lock_file (0)
+  Symbol: _rmdir (0)
+  Symbol: _unlink (0)
+  Symbol: _unlock_file (0)
+  Symbol: _waccess (0)
+  Symbol: _wmkdir (0)
+  Symbol: _wrename (0)
+  Symbol: _wrmdir (0)
+  Symbol: _wstat64 (0)
+  Symbol: _wunlink (0)
+}
+Import {
+  Name: api-ms-win-crt-conio-l1-1-0.dll
+  ImportLookupTableRVA: 0xE6AD60
+  ImportAddressTableRVA: 0xE6B748
+  Symbol: _getch (0)
+}
+Import {
+  Name: bcrypt.dll
+  ImportLookupTableRVA: 0xE6AD70
+  ImportAddressTableRVA: 0xE6B758
+  Symbol: BCryptCloseAlgorithmProvider (0)
+  Symbol: BCryptGenRandom (0)
+  Symbol: BCryptOpenAlgorithmProvider (0)
+}

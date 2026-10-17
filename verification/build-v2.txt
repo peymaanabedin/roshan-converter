@@ -1,0 +1,29 @@
+Built /workspace/scratch/36caf938433a/roshan-heic/release/Roshan-HEIC.exe (24,910,336 bytes). Only Windows system DLLs imported.
+
+   Compiling roshan-heic v2.0.0 (/workspace/scratch/36caf938433a/roshan-heic)
+warning: associated constant `ALL` is never used
+ --> src/engine.rs:8:15
+  |
+7 | impl ImageFormat {
+  | ---------------- associated constant in this implementation
+8 |     pub const ALL:[Self;4]=[Self::Jpg,Self::Png,Self::Webp,Self::Heic];
+  |               ^^^
+  |
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: associated constant `ALL` is never used
+  --> src/engine.rs:16:15
+   |
+15 | impl VideoFormat {
+   | ---------------- associated constant in this implementation
+16 |     pub const ALL:[Self;4]=[Self::Mp4,Self::Mov,Self::Avi,Self::Webm];
+   |               ^^^
+
+warning: function `is_supported_path` is never used
+  --> src/engine.rs:27:8
+   |
+27 | pub fn is_supported_path(path:&Path)->bool {media_kind(path).is_some()}
+   |        ^^^^^^^^^^^^^^^^^
+
+warning: `roshan-heic` (bin "Roshan-HEIC") generated 3 warnings
+    Finished `release` profile [optimized] target(s) in 17.17s

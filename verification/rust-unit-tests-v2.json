@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "command": "cargo test --locked --offline",
+  "target": "x86_64-unknown-linux-gnu",
+  "result": "passed",
+  "source_sha256": {
+    "src/color.rs": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc",
+    "src/engine.rs": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+    "src/image_engine.rs": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+    "src/main.rs": "abf09cd93f03b3c69e2740e1dd73342d65e7bfd2f465ca8d8a0ea6faa8b4718b",
+    "src/metadata.rs": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+    "src/safe_output.rs": "266dc083f9639c16845cadf41e30a4a9c5f1632be13acff14c71b8b6d8bfe023",
+    "src/video_engine.rs": "613d42e6d580b727b35b26b8b08a272346ed3599ee82dacd6ab2b21e7a3d52f4",
+    "src/video_tools.rs": "a39db561c71f21ae53a5057d37cdc987a2f53da8434d917bddbe78674d3b0693"
+  },
+  "log": "rust-unit-tests-v2.txt"
+}

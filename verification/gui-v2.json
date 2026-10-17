@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-17T14:13:06.202642+00:00",
+  "application": "Roshan Converter 2.0.0",
+  "executable": {
+    "product_filename": "Roshan-HEIC.exe",
+    "sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+    "bytes": 24910336,
+    "immutable_test_snapshot_filename": "Roshan-d7ce29f1538b.exe",
+    "snapshot_hash_reverified_after_tests": true
+  },
+  "environment": {
+    "runtime": "Wine 11",
+    "display": "isolated Xvfb :87, 1200x900",
+    "dpi": 96,
+    "native_widgets": "Win32, common controls v6, TaskDialogIndirect",
+    "default_window_pixels": [
+      940,
+      650
+    ]
+  },
+  "ui": {
+    "english_default": true,
+    "persian_toggle_and_repaint": true,
+    "all_compact_persian_buttons_fit": true,
+    "gdi_measured_persian_labels_pixels": {
+      "پاک‌سازی": {
+        "text": 63,
+        "control": 86
+      },
+      "پوشه…": {
+        "text": 50,
+        "control": 80
+      },
+      "اولیه": {
+        "text": 33,
+        "control": 64
+      }
+    },
+    "about_exact_credit": "برنامه نویسی و توسعه توسط پیمان عابدین پور",
+    "about_website": "https://peymaanabedinpour.ir",
+    "about_credit_domain_and_expander_text_asserted": true,
+    "website_not_opened_during_test": true,
+    "adaptive_image_only_and_video_only_selectors_verified": true
+  },
+  "file_selection": {
+    "native_multi_file_picker": "passed: two Unicode-named image files selected together",
+    "picker_rows": [
+      "row=0\t‫نمونه عکس.png‬\tReady\tJPG\t",
+      "row=1\t‫تصویر.heic‬\tReady\tJPG\t"
+    ],
+    "native_drop_handler": "passed",
+    "drop_method": "Windows test helper allocated read/write DROPFILES data in the application process with VirtualAllocEx/WriteProcessMemory and synchronously sent WM_DROPFILES. No executable code was injected. The application consumed the actual native payload and showed its real modal.",
+    "drop_report": {
+      "added": 2,
+      "added_images": 1,
+      "added_videos": 1,
+      "duplicates": 2,
+      "unsupported": 1,
+      "unavailable": 1,
+      "default_destination": "Converted folder beside each original"
+    },
+    "drop_convert_now_action": "passed: started the mixed batch"
+  },
+  "mixed_batch": {
+    "completed_files": 3,
+    "output_files": 3,
+    "expected_corrupt_input_failures": 1,
+    "image_target": "JPG",
+    "video_target": "WebM",
+    "native_rows": [
+      "row=0\t‫نمونه عکس.png‬\tDone · note\tJPG · 73 × 67\t13 KB",
+      "row=1\t‫تصویر.heic‬\tDone · note\tJPG · 512 × 512\t43 KB",
+      "row=2\t‫نمونه ویدئو.mp4‬\tDone\tWEBM · 320 × 180\t83 KB",
+      "row=3\t‫خراب.heic‬\tFailed\tJPG\t"
+    ],
+    "outputs": [
+      {
+        "filename": "تصویر.jpg",
+        "bytes": 43523,
+        "sha256": "616d186fcfc54cc03d24b1390f902ce9b6ca805397b1868ddfcba9a53cf7aba9",
+        "decoded_format": "JPEG",
+        "dimensions": [
+          512,
+          512
+        ]
+      },
+      {
+        "filename": "نمونه عکس.jpg",
+        "bytes": 13570,
+        "sha256": "dd446b6d87b8d692316e22a0f3239a893990545a3e13fb32ecb61e62ee314369",
+        "decoded_format": "JPEG",
+        "dimensions": [
+          73,
+          67
+        ]
+      },
+      {
+        "filename": "نمونه ویدئو.webm",
+        "bytes": 84624,
+        "sha256": "5512377d4543991b7678d68b60abaff36174b6639e8278c49bf0d29acc844691",
+        "dimensions_from_native_result": [
+          320,
+          180
+        ]
+      }
+    ]
+  },
+  "critical_checks_same_live_execution": {
+    "sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+    "persian_common_warning_and_error": true,
+    "image_only_requeue": true,
+    "metadata_requeue": true,
+    "cancel": {
+      "progress": "row=0\tcancel-720p-30s.mp4\tConverting 5%\tWebM",
+      "row_after_cancel": "row=0\tcancel-720p-30s.mp4\tCanceled\tWebM",
+      "seconds_until_idle": 0.439,
+      "partial_files_inside_same_execution": [],
+      "no_published_file": true
+    },
+    "same_settings_retry": {
+      "progress": "row=0\tcancel-720p-30s.mp4\tConverting 5%\tWebM",
+      "no_readd_needed": true,
+      "partial_files_after_second_cancel_inside_same_execution": []
+    },
+    "completed_after_retry": {
+      "row": "row=0\tcancel-720p-30s.mp4\tDone\tMP4 · 1280 × 720\t25.8 MB",
+      "output_bytes": 27031858,
+      "source_sha256": "a86f1eb05f40206434dc05759d0b6e85a4cc45b0d8e8bb591eeecb7b3a531618",
+      "output_sha256": "a86f1eb05f40206434dc05759d0b6e85a4cc45b0d8e8bb591eeecb7b3a531618",
+      "remaining_partials_inside_same_execution": []
+    },
+    "status": "passed"
+  },
+  "input_files_unchanged": {
+    "inputs/نمونه ویدئو.mp4": true,
+    "inputs/تصویر.heic": true,
+    "inputs/unsupported.txt": true,
+    "inputs/نمونه عکس.png": true,
+    "inputs/خراب.heic": true,
+    "cancel/cancel-720p-30s.mp4": true
+  },
+  "screenshots": {
+    "gui-v2-english.png": {
+      "sha256": "8dbdb7f9e1a7c05ac1ce1d89898e05744e662302060e588149969f5a3d12c7f7",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-persian.png": {
+      "sha256": "65bc479c98514a849f456e6f7bd8ab68f38dc23b8ee546add499249b5b9085f3",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-about.png": {
+      "sha256": "83773f89f2a823d56a21bc59e502b9b62879e5a7e39923c3224e163026640cd9",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-drop.png": {
+      "sha256": "77a2b287bfd06d600ffbd9d51270dbf8e06677c3f495c841e5154aa31617d159",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-picker.png": {
+      "sha256": "74f3767c852fa80efedf6dad90ab79b241ce10911ae722bc1f0e87fa5f81579f",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-batch.png": {
+      "sha256": "c5ab3b95dc88a884febe09aae834d5e8d94fc47604080484f4c8ab3d0f2a0510",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-cancel-progress.png": {
+      "sha256": "feaf7e63d64ccc63ea3bf31216728e5aff1bada1303275f4c5adc7d508943e7a",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-canceled.png": {
+      "sha256": "98a7d2b7555b517623da9fe8f79f5679f165661ed11578b4d59e385cbe326909",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-retry-complete.png": {
+      "sha256": "306d1bb4a403c7f953a7bccf28ea1a2e6cd819be43661676aa6c8efe57bf5fe8",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d"
+    },
+    "gui-v2-preview.png": {
+      "sha256": "6f9d5ed95977f6ac19a7047e3f02fffac7870012b2a7a769a47632032f2cdf0c",
+      "tested_executable_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+      "dimensions": [
+        932,
+        616
+      ],
+      "capture_method": "Direct native GDI client-region capture of the immutable EXE in its fresh default English state, with an empty queue and both image/video output selectors visible. The captured BMP was losslessly encoded as PNG without cropping or edits."
+    }
+  },
+  "limitations": [
+    "Tested as a real Windows PE application under Wine 11; physical Windows desktop execution was not available.",
+    "A physical Explorer mouse drag was not exercised; the native WM_DROPFILES handler and actual modal were exercised with a valid payload in the app process.",
+    "Multi-monitor DPI transitions and physical Windows folder browsing were not exercised."
+  ],
+  "environment_observation": "Cross-command restoration of original zero-byte reservations and runtime files was observed after same-command cleanup assertions passed. This is consistent with executor/Wine filesystem synchronization; that attribution is an inference, not a proven cause. The final GUI cancellation assertions were captured inside one live verification command while the immutable application was running: both cancellations left no partial and no published output; subsequent completion left no partial. Earlier restored host artifacts are not treated as proof of an application deletion failure.",
+  "preliminary_observations": "Earlier 477e GUI sessions launched from a mutable release path that overlapped rebuilding. They are superseded by all final assertions and screenshots against the immutable d7ce snapshot above."
+}

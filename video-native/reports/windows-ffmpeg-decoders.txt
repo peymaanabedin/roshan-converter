@@ -1,0 +1,50 @@
+Decoders:
+ V..... = Video
+ A..... = Audio
+ S..... = Subtitle
+ .F.... = Frame-level multithreading
+ ..S... = Slice-level multithreading
+ ...X.. = Codec is experimental
+ ....B. = Supports draw_horiz_band
+ .....D = Supports direct rendering method 1
+ ------
+ V..... libdav1d              (codec av1)
+ VFS..D ffv1                 
+ V...BD h263                 
+ VFS..D h264                 
+ VFS..D hevc                 
+ V....D mjpeg                
+ V.S.BD mpeg1video           
+ V.S.BD mpeg2video           
+ VF..BD mpeg4                
+ VFS..D prores               
+ V..... rawvideo             
+ VFS..D vp8                  
+ VFS..D vp9                  
+ V..... wrapped_avframe      
+ A....D aac                  
+ A....D aac_latm             
+ A....D ac3                  
+ A....D adpcm_ima_wav        
+ A....D adpcm_ms             
+ AF...D alac                 
+ A....D eac3                 
+ AF...D flac                 
+ A....D mp2                  
+ A....D mp2float              (codec mp2)
+ A....D mp3float              (codec mp3)
+ A....D mp3                  
+ A....D opus                 
+ A....D libopus               (codec opus)
+ A....D pcm_alaw             
+ A....D pcm_f32le            
+ A....D pcm_f64le            
+ A....D pcm_mulaw            
+ A....D pcm_s16be            
+ A....D pcm_s16le            
+ A....D pcm_s24be            
+ A....D pcm_s24le            
+ A....D pcm_s32be            
+ A....D pcm_s32le            
+ A....D pcm_u8               
+ A....D vorbis               

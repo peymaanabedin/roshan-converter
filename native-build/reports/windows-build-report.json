@@ -1,0 +1,29 @@
+{
+  "target": "windows",
+  "prefix": "/workspace/scratch/36caf938433a/native/windows",
+  "libraries": {
+    "libde265.a": {
+      "bytes": 1045104,
+      "sha256": "4a43f0f8c8729abd627f5184c2375edb102c9a36139f04e9c445b330d442ba71"
+    },
+    "liblcms2.a": {
+      "bytes": 593680,
+      "sha256": "70685ab72d26276c7e5d9e6df7396fcb244140ad447842425d7a54ca0a155ed2"
+    },
+    "libx265.a": {
+      "bytes": 7891288,
+      "sha256": "366708448966e097dcddb686f303c1849afac386982b844d0c087776b55d32e3"
+    },
+    "libheif.a": {
+      "bytes": 8002010,
+      "sha256": "e9b0dc47366ff3c331a5d6cf7049fdd86215cfcebbc5602f2717ec7ebc6d65c1"
+    }
+  },
+  "codecs": [
+    "libde265 (HEVC decoder, statically built in)",
+    "x265 (8-bit HEVC encoder, lossless 4:4:4, statically built in)"
+  ],
+  "x265_assembly": true,
+  "plugin_loading": false,
+  "native_encoder_link_smoke": "passed (full encoder roundtrip executable linked and ran)"
+}

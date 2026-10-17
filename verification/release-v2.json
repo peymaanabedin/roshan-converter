@@ -1,0 +1,144 @@
+{
+  "application": "Roshan Converter",
+  "version": "2.0.0",
+  "filename": "Roshan-HEIC.exe",
+  "bytes": 24910336,
+  "sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+  "target": "x86_64-pc-windows-gnullvm",
+  "operating_system": "Windows 10/11 x64",
+  "build_toolchain": "Rust 1.99.1 / LLVM-MinGW 20261006 UCRT / Clang 23.1.3",
+  "default_language": "English",
+  "additional_language": "Persian (RTL)",
+  "developer_credit_fa": "برنامه نویسی و توسعه توسط پیمان عابدین پور",
+  "developer_website": "https://peymaanabedinpour.ir",
+  "image_formats": [
+    "heic",
+    "png",
+    "jpg",
+    "webp"
+  ],
+  "video_containers": [
+    "mp4",
+    "mov",
+    "avi",
+    "webm"
+  ],
+  "single_distributed_executable": true,
+  "downloaded_runtime_dependencies": false,
+  "runtime_video_workers": "Embedded gzip payloads extracted to a private temporary directory; size/SHA256 checked before execution. Normal exit attempts removal.",
+  "source_sha256": {
+    "Cargo.lock": "76b8d49d2e5b5a52a94bc37c73e41d3c0be2a3c9b366838f95471bf7884a34a1",
+    "Cargo.toml": "dc5d1ae557efb4a32ee3eb191d690377a4a772e6c34dfe589fbe970f875e3dd2",
+    "assets/app.manifest": "c2d6515532b7d7e3f8ecd510c981542839eea903ec080b46214eadb53cc93171",
+    "assets/app.rc": "03e62f74ffc8a3aba3b1053808b23f8152f6925d24343c4807974f77206a09d1",
+    "build.rs": "33201b294bc987bc9a1e7dcc2666813b5196f544e7de53f325f4be2c31f43c6f",
+    "native/bridge.cpp": "1597de07361fb757e64b6949c441da1cf559a29447a9f4d04223cb1f940cafaa",
+    "native/bridge.h": "5a385792170a1f2d8260595fb0b9c4379bbd2527711e7d2904613c479f65f410",
+    "src/color.rs": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc",
+    "src/engine.rs": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+    "src/gui.rs": "8e5508ffdc635d2e539b2614e2a44bfeef24db3196ee7f7549cd84db9790701b",
+    "src/image_engine.rs": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+    "src/main.rs": "abf09cd93f03b3c69e2740e1dd73342d65e7bfd2f465ca8d8a0ea6faa8b4718b",
+    "src/metadata.rs": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+    "src/safe_output.rs": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a",
+    "src/video_engine.rs": "613d42e6d580b727b35b26b8b08a272346ed3599ee82dacd6ab2b21e7a3d52f4",
+    "src/video_tools.rs": "a39db561c71f21ae53a5057d37cdc987a2f53da8434d917bddbe78674d3b0693"
+  },
+  "embedded_workers": {
+    "ffmpeg.exe": {
+      "bytes": 15638528,
+      "sha256": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca"
+    },
+    "ffprobe.exe": {
+      "bytes": 15473664,
+      "sha256": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+    }
+  },
+  "windows_imports": {
+    "target": "x86_64-pc-windows-gnullvm",
+    "imports": [
+      "kernel32.dll",
+      "ntdll.dll",
+      "user32.dll",
+      "gdi32.dll",
+      "ole32.dll",
+      "combase.dll",
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "comdlg32.dll",
+      "uxtheme.dll",
+      "comctl32.dll",
+      "shell32.dll",
+      "bcryptprimitives.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-private-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll",
+      "api-ms-win-crt-multibyte-l1-1-0.dll",
+      "ADVAPI32.dll"
+    ],
+    "third_party_dlls": []
+  },
+  "image_matrix_source_hash_comparison": {
+    "image_engine.rs": {
+      "matrix": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+      "final": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+      "matches": true
+    },
+    "color.rs": {
+      "matrix": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc",
+      "final": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc",
+      "matches": true
+    },
+    "metadata.rs": {
+      "matrix": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+      "final": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+      "matches": true
+    },
+    "safe_output.rs": {
+      "matrix": "266dc083f9639c16845cadf41e30a4a9c5f1632be13acff14c71b8b6d8bfe023",
+      "final": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a",
+      "matches": false
+    },
+    "engine.rs": {
+      "matrix": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+      "final": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+      "matches": true
+    }
+  },
+  "change_since_matrices": "GUI layout/localization fixes, followed by bounded Windows temporary cleanup retries in safe_output.rs. Codec/color/metadata/video engines and embedded workers unchanged; focused final smoke plus native Windows unit and GUI regressions cover the final build.",
+  "video_historical_source_note": {
+    "independent_a1d447_baseline_captured": false,
+    "note": "Release work log records only gui.rs changes between a1d447 and f000; independent historical video source hash baseline was not captured for a1d447. The f000 smoke did capture source hashes, and its comparison with this release is recorded separately."
+  },
+  "video_comparison_since_f000": {
+    "predecessor_executable_sha256": "f000f4547274f24e70c1a85d565945f0aac5f9604c8c56f3ade8153204228788",
+    "independent_source_hash_baseline_captured": true,
+    "changed_backend_sources": {
+      "src/safe_output.rs": {
+        "predecessor": "266dc083f9639c16845cadf41e30a4a9c5f1632be13acff14c71b8b6d8bfe023",
+        "final": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a"
+      }
+    },
+    "description": "Temporary-output cleanup retries only Windows access/sharing/lock failures (5/32/33), every 50 ms up to one second; missing files count as cleaned. The root regression uses a real Windows handle temporarily denying deletion."
+  },
+  "verification_environment": "Actual Windows executable under Wine 11 on Ubuntu 24.04; isolated native GUI virtual display.",
+  "environment_cleanup_limit": "Some Wine/executor sessions restored temporary artifacts after a command boundary despite observed in-command removal. Reports distinguish both observations; durable cleanup across that environment boundary and physical-Windows execution are not claimed.",
+  "physical_windows_tested": false,
+  "publisher_signed": false,
+  "reports": [
+    "images-v2-windows.json",
+    "images-v2-windows-final.json",
+    "videos-v2-windows.json",
+    "videos-v2-windows-final.json",
+    "gui-v2.json",
+    "rust-unit-tests-v2.json",
+    "rust-unit-tests-windows-v2.json"
+  ]
+}

@@ -1,0 +1,52 @@
+[package]
+name = "roshan-heic"
+version = "2.0.0"
+edition = "2021"
+description = "Standalone offline image and video converter with English and Persian native Windows interface"
+license = "GPL-3.0-or-later"
+build = "build.rs"
+
+[[bin]]
+name = "Roshan-HEIC"
+path = "src/main.rs"
+
+[dependencies]
+jpeg-encoder = "=0.7.1"
+serde_json = "=1.0.145"
+image = { version = "=0.25.10", default-features = false, features = ["jpeg", "png", "webp"] }
+flate2 = { version = "=1.1.10", default-features = false, features = ["rust_backend"] }
+sha2 = "=0.10.9"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = [
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Com",
+  "Win32_System_Console",
+  "Win32_Security",
+  "Win32_System_JobObjects",
+  "Win32_System_Threading",
+  "Win32_System_SystemServices",
+  "Win32_Storage_FileSystem",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_UI_Controls",
+  "Win32_UI_Controls_Dialogs",
+  "Win32_UI_Shell",
+  "Win32_UI_Shell_Common",
+  "Win32_UI_HiDpi",
+  "Win32_UI_Input_KeyboardAndMouse",
+] }
+
+[build-dependencies]
+cc = "=1.2.41"
+flate2 = { version = "=1.1.10", default-features = false, features = ["rust_backend"] }
+sha2 = "=0.10.9"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = "debuginfo"
+panic = "unwind"
+

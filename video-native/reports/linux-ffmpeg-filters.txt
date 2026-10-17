@@ -1,0 +1,41 @@
+Filters:
+  T.. = Timeline support
+  .S. = Slice threading
+  A = Audio input/output
+  V = Video input/output
+  N = Dynamic number and/or type of input/output
+  | = Source or sink filter
+  ------
+ .. aformat           A->A       (null)
+ .. anull             A->A       (null)
+ .. aresample         A->A       (null)
+ .. asetpts           A->A       (null)
+ .. atrim             A->A       (null)
+ .. silencedetect     A->A       (null)
+ .. anullsrc          |->A       (null)
+ .. sine              |->A       (null)
+ .. copy              V->V       (null)
+ .. crop              V->V       (null)
+ .. format            V->V       (null)
+ .. fps               V->V       (null)
+ TS hflip             V->V       (null)
+ .. null              V->V       (null)
+ .. pad               V->V       (null)
+ TS rotate            V->V       (null)
+ .. scale             V->V       (null)
+ .. setdar            V->V       (null)
+ .. setpts            V->V       (null)
+ .. setsar            V->V       (null)
+ .S tonemap           V->V       (null)
+ .S transpose         V->V       (null)
+ .. trim              V->V       (null)
+ T. vflip             V->V       (null)
+ .S zscale            V->V       (null)
+ .. color             |->V       (null)
+ .. testsrc           |->V       (null)
+ .. testsrc2          |->V       (null)
+ .. concat            N->N       (null)
+ .. abuffer           |->A       (null)
+ .. buffer            |->V       (null)
+ .. abuffersink       A->|       (null)
+ .. buffersink        V->|       (null)

@@ -1,0 +1,213 @@
+{
+  "schema": 1,
+  "decoder_version": "1.23.6",
+  "scope": "Public upstream regression photos are downloaded only for local verification; no photo bytes are bundled. Source licenses/rights should be checked before redistribution.",
+  "files": [
+    {
+      "file": "example.heic",
+      "source": "https://raw.githubusercontent.com/strukturag/libheif/v1.23.6/examples/example.heic",
+      "bytes": 718114,
+      "sha256": "7f8b363e4936c0666a25f64f3a92fda10bd8e5453be4592530b65a55dd98f3f2",
+      "expected_bridge": [
+        {
+          "width": 1280,
+          "height": 854,
+          "flags": 8
+        },
+        {
+          "width": 1280,
+          "height": 854,
+          "flags": 8
+        }
+      ],
+      "coverage": "Two independent top-level still images; no color profile, assumption flag8."
+    },
+    {
+      "file": "clap_cropped.heic",
+      "source": "https://raw.githubusercontent.com/strukturag/libheif/v1.23.6/tests/data/clap_cropped.heic",
+      "bytes": 2060,
+      "sha256": "54c62d0cb9e3ee09537788f9af59fff245791a681a80a16b27da1c23488a8e29",
+      "expected_bridge": [
+        {
+          "width": 64,
+          "height": 64,
+          "flags": 0
+        }
+      ],
+      "coverage": "Official clean-aperture test: 256x256 coded frame, 64x64 displayed crop."
+    },
+    {
+      "file": "rainbow-451x461.heic",
+      "source": "https://raw.githubusercontent.com/strukturag/libheif/v1.23.6/tests/data/rainbow-451x461.heic",
+      "bytes": 7080,
+      "sha256": "4b2ce727f093944975f143ba2b39c4c64511b766d94552f8d51a755916e7f983",
+      "expected_bridge": [
+        {
+          "width": 451,
+          "height": 461,
+          "flags": 0
+        }
+      ],
+      "coverage": "Odd image dimensions, valid profile."
+    },
+    {
+      "file": "with-alpha-512x512.heic",
+      "source": "https://raw.githubusercontent.com/strukturag/libheif/v1.23.6/tests/data/with-alpha-512x512.heic",
+      "bytes": 8284,
+      "sha256": "dac399d3bf1019baaf5f88eef8b277087d0643e735db947c42355237bb9d0221",
+      "expected_bridge": [
+        {
+          "width": 512,
+          "height": 512,
+          "flags": 2
+        }
+      ],
+      "coverage": "Alpha transparency is composited over white in linear light."
+    },
+    {
+      "file": "conformance_window_padding.heic",
+      "source": "https://raw.githubusercontent.com/strukturag/libheif/v1.23.6/tests/data/conformance_window_padding.heic",
+      "bytes": 656,
+      "sha256": "cf670bad6021268e85db1d9e2593a5be1aa7f2ee1e706af5e76ee7abf2a73ec6",
+      "expected_bridge": [
+        {
+          "width": 1,
+          "height": 1,
+          "flags": 40
+        }
+      ],
+      "coverage": "1x1 displayed conformance-window crop; explicit HEIF orientation property."
+    },
+    {
+      "file": "RGB_10__128x128.heif",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif/RGB_10__128x128.heif",
+      "bytes": 11637,
+      "sha256": "7fbf1573c1e5c1693953b31bb287327c53eaefa74a6f1324e7391a08b3ed1e73",
+      "expected_bridge": [
+        {
+          "width": 128,
+          "height": 128,
+          "flags": 12
+        }
+      ],
+      "coverage": "10-bit source; high-depth reduction and assumed-color flags12."
+    },
+    {
+      "file": "RGBA_12__29x100.heif",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif/RGBA_12__29x100.heif",
+      "bytes": 7253,
+      "sha256": "92fd6e2154a8ed5b8c07edc969869fb038b95e4dff742f04da6b6eeeef556378",
+      "expected_bridge": [
+        {
+          "width": 29,
+          "height": 100,
+          "flags": 14
+        }
+      ],
+      "coverage": "12-bit RGBA; expected flags14 = alpha2 + highdepth4 + colorassumed8."
+    },
+    {
+      "file": "arrow.heic",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif_other/arrow.heic",
+      "bytes": 792052,
+      "sha256": "73f604d7353df4848505a1f45a5517f736857fe047372f95c2f3d671df92c22c",
+      "expected_bridge": [
+        {
+          "width": 3024,
+          "height": 4032,
+          "flags": 32
+        }
+      ],
+      "coverage": "Portrait iPhone file with HEIF orientation transform and embedded ICC."
+    },
+    {
+      "file": "spatial_photo.heic",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif_other/spatial_photo.heic",
+      "bytes": 1274535,
+      "sha256": "ef941d328072a2df034adb3c3b46f41117606bfc8fcc100dff975d31f55ec028",
+      "expected_bridge": [
+        {
+          "width": 2560,
+          "height": 2560,
+          "flags": 0
+        },
+        {
+          "width": 2560,
+          "height": 2560,
+          "flags": 0
+        }
+      ],
+      "coverage": "Two top-level square camera images; both are exported separately."
+    },
+    {
+      "file": "guitar_cw90.hif",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif_special/guitar_cw90.hif",
+      "bytes": 5156864,
+      "sha256": "f0d5e88be07b9d70a3715218ca612ccf45b126e5b4b42172dce14a62d2099932",
+      "expected_bridge": [
+        {
+          "width": 4672,
+          "height": 7008,
+          "flags": 52
+        }
+      ],
+      "coverage": "Sony 10-bit SDR file, HEIF rotation, decoder warning flagged (52)."
+    },
+    {
+      "file": "cat.hif",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif_other/cat.hif",
+      "bytes": 2641920,
+      "sha256": "3a396202a8bb50c5cccbfd89d3cf6ef0a0fa47794afd785693d882edc2eb30b7",
+      "expected_bridge": [
+        {
+          "width": 4240,
+          "height": 2832,
+          "flags": 36
+        }
+      ],
+      "coverage": "Sony 10-bit SDR file with HEIF transform."
+    },
+    {
+      "file": "xiaomi.heic",
+      "source": "https://raw.githubusercontent.com/bigcat88/pillow_heif/64dc06fa7e0142e9133b98ea0d85ffe99544d82f/tests/images/heif_special/xiaomi.heic",
+      "bytes": 896013,
+      "sha256": "cb5c7d9131931df4abd9bfe1c3de47617b68d1fae54a1c367fc5981ffea6aeed",
+      "expected_bridge": [
+        {
+          "width": 2592,
+          "height": 1944,
+          "flags": 8
+        }
+      ],
+      "coverage": "Large EXIF payload (192182 bytes) exercises downstream metadata-size handling."
+    },
+    {
+      "file": "DSC06175_hdr.heic",
+      "source": "https://raw.githubusercontent.com/HCYANG2000/Generate_Apple_HDR_Photos/eca58dabf6fe3ac74defde42ca75769fb02f9c48/Example_images/output/DSC06175_hdr.heic",
+      "bytes": 7505397,
+      "sha256": "9af41c63b0063b6748ac96ab506028653aa8475b72ffa95e6ac903618c02be0f",
+      "expected_bridge": [
+        {
+          "width": 4240,
+          "height": 2832,
+          "flags": 37
+        }
+      ],
+      "coverage": "Real 10-bit BT.2020 HLG source; NCLX (primaries9,transfer18,matrix1,full-range). SDR tone mapping exercised; flags37."
+    },
+    {
+      "file": "7949_mirror_horizontal_rotate_270_cw.HEIC",
+      "source": "https://raw.githubusercontent.com/ente/test-fixtures/e2b65015d855aaee98e3d66be74dfcd681c38c05/media/heic/v1/files/7949_mirror_horizontal_rotate_270_cw.HEIC",
+      "bytes": 657724,
+      "sha256": "94d2e8396114479cc19b3fc54ecb0f9702e0253cfacf47efe7b2cb083261038f",
+      "expected_bridge": [
+        {
+          "width": 1209,
+          "height": 1547,
+          "flags": 0
+        }
+      ],
+      "coverage": "EXIF-only orientation7. Bridge honors clean aperture (1209x1547), leaves EXIF to Rust; expected final JPG1547x1209 with EXIF1."
+    }
+  ]
+}

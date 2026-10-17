@@ -1,0 +1,2 @@
+   Compiling roshan-heic v2.0.0 (/workspace/scratch/36caf938433a/roshan-heic)
+    Finished `release` profile [optimized] target(s) in 5.61s

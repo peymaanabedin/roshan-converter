@@ -1,0 +1,1329 @@
+{
+  "result": "passed",
+  "application": "/workspace/scratch/36caf938433a/native/verification-v2/rust/release/Roshan-HEIC",
+  "application_sha256": "efd9e89a89444415bdcb69dbda64e41567e3d805f935dafa1b53591e2218d8e8",
+  "target": "linux-native",
+  "directed_format_pairs": 12,
+  "same_format_copies": 4,
+  "orientation_conversions": 24,
+  "script_sha256": "8fc0548204767c94069f2e8afa71c3d5a27e9340116cfe21a007a5b2dffa7d6f",
+  "native_bridge_sha256": "1597de07361fb757e64b6949c441da1cf559a29447a9f4d04223cb1f940cafaa",
+  "source_sha256": {
+    "image_engine.rs": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+    "color.rs": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc",
+    "metadata.rs": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+    "safe_output.rs": "266dc083f9639c16845cadf41e30a4a9c5f1632be13acff14c71b8b6d8bfe023",
+    "engine.rs": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68"
+  },
+  "cases": [
+    {
+      "case": "png->heic",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "png->jpg",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 3,
+      "warnings": [
+        "Transparency was composited onto white because JPG does not support alpha."
+      ]
+    },
+    {
+      "case": "png->webp",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "heic->png",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "heic->jpg",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 3,
+      "warnings": [
+        "Transparency was composited onto white because JPG does not support alpha."
+      ]
+    },
+    {
+      "case": "heic->webp",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "jpg->heic",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 2,
+      "warnings": []
+    },
+    {
+      "case": "jpg->png",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 2,
+      "warnings": []
+    },
+    {
+      "case": "jpg->webp",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 2,
+      "warnings": []
+    },
+    {
+      "case": "webp->heic",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "webp->png",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": true,
+      "max_sample_difference": 0,
+      "warnings": []
+    },
+    {
+      "case": "webp->jpg",
+      "result": "passed",
+      "width": 73,
+      "height": 67,
+      "icc_bytes": 588,
+      "alpha": false,
+      "max_sample_difference": 3,
+      "warnings": [
+        "Transparency was composited onto white because JPG does not support alpha."
+      ]
+    },
+    {
+      "case": "same-format byte copy png",
+      "result": "passed",
+      "sha256": "51cff805356357797d5495ddfdf516a5c5b44076b5189dc7d59c5802bd0f667b"
+    },
+    {
+      "case": "same-format byte copy heic",
+      "result": "passed",
+      "sha256": "cefd48b905954fefe3c011b4227936bee84a7957c06b60a0a5a21c450cd8be5f"
+    },
+    {
+      "case": "same-format byte copy jpg",
+      "result": "passed",
+      "sha256": "f4d5c1b70546b4cfb47ae9e3b289cdecc7259e3fa348a337c35733ea8039cded"
+    },
+    {
+      "case": "same-format byte copy webp",
+      "result": "passed",
+      "sha256": "8a2bb7209cffb6b072e0b5d237cc2431f4d3dff1660c9c6a96a75bf1531fd186"
+    },
+    {
+      "case": "all 8 EXIF orientations in PNG/JPG/WebP",
+      "result": "passed",
+      "conversions": 24
+    },
+    {
+      "case": "16-bit PNG preservation and explicit 8-bit conversion warnings",
+      "result": "passed"
+    },
+    {
+      "case": "target-specific EXIF limits preserve 70 KiB metadata outside JPEG",
+      "result": "passed"
+    },
+    {
+      "case": "PNG full-range SDR cICP: Display-P3, BT.2020, sRGB; correct precedence",
+      "result": "passed"
+    },
+    {
+      "case": "unsupported/unknown, narrow-range, non-RGB and HDR cICP fail without false color; HDR copy exact",
+      "result": "passed"
+    },
+    {
+      "case": "malformed/duplicate PNG cICP is rejected",
+      "result": "passed"
+    },
+    {
+      "case": "PNG gAMA=1.0 alpha composites in its native linear color coordinates",
+      "result": "passed"
+    },
+    {
+      "case": "no-overwrite publication, corrupt-input error, batch continuation, Unicode path",
+      "result": "passed"
+    }
+  ],
+  "cli_runs": [
+    {
+      "case": "seed-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 18390,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "seed-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-jpg/synthetic-rgba.jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "seed-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 980,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-webp/synthetic-rgba.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-png-to-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 18390,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-png-to-heic/synthetic-rgba.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-png-to-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-png-to-jpg/synthetic-rgba.jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-png-to-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 980,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-png-to-webp/synthetic-rgba.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-heic-to-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+        "outputs": [
+          {
+            "bytes": 1307,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-heic-to-png/synthetic-rgba.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-heic-to-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-heic-to-jpg/synthetic-rgba.jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-heic-to-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+        "outputs": [
+          {
+            "bytes": 980,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-heic-to-webp/synthetic-rgba.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-jpg-to-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-jpg/synthetic-rgba.jpg",
+        "outputs": [
+          {
+            "bytes": 13546,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-jpg-to-heic/synthetic-rgba.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-jpg-to-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-jpg/synthetic-rgba.jpg",
+        "outputs": [
+          {
+            "bytes": 8335,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-jpg-to-png/synthetic-rgba.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-jpg-to-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-jpg/synthetic-rgba.jpg",
+        "outputs": [
+          {
+            "bytes": 11912,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-jpg-to-webp/synthetic-rgba.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-webp-to-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-webp/synthetic-rgba.webp",
+        "outputs": [
+          {
+            "bytes": 18390,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-webp-to-heic/synthetic-rgba.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-webp-to-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-webp/synthetic-rgba.webp",
+        "outputs": [
+          {
+            "bytes": 1307,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-webp-to-png/synthetic-rgba.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "matrix-webp-to-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-webp/synthetic-rgba.webp",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/matrix-webp-to-jpg/synthetic-rgba.jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "copy-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 18674,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/copy-png/synthetic-rgba.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "copy-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+        "outputs": [
+          {
+            "bytes": 18390,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/copy-heic/synthetic-rgba.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "copy-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-jpg/synthetic-rgba.jpg",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/copy-jpg/synthetic-rgba.jpg",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "copy-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-webp/synthetic-rgba.webp",
+        "outputs": [
+          {
+            "bytes": 980,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/copy-webp/synthetic-rgba.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-1.png",
+        "outputs": [
+          {
+            "bytes": 3656,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-1/orientation-png-1.heic",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-2",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-2.png",
+        "outputs": [
+          {
+            "bytes": 3609,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-2/orientation-png-2.heic",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-3",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-3.png",
+        "outputs": [
+          {
+            "bytes": 3535,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-3/orientation-png-3.heic",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-4",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-4.png",
+        "outputs": [
+          {
+            "bytes": 3528,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-4/orientation-png-4.heic",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-5",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-5.png",
+        "outputs": [
+          {
+            "bytes": 4241,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-5/orientation-png-5.heic",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-6",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-6.png",
+        "outputs": [
+          {
+            "bytes": 4488,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-6/orientation-png-6.heic",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-7",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-7.png",
+        "outputs": [
+          {
+            "bytes": 4572,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-7/orientation-png-7.heic",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-png-8",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-png-8.png",
+        "outputs": [
+          {
+            "bytes": 4356,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-png-8/orientation-png-8.heic",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-1.jpg",
+        "outputs": [
+          {
+            "bytes": 979,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-1/orientation-jpg-1.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-2",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-2.jpg",
+        "outputs": [
+          {
+            "bytes": 978,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-2/orientation-jpg-2.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-3",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-3.jpg",
+        "outputs": [
+          {
+            "bytes": 919,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-3/orientation-jpg-3.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-4",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-4.jpg",
+        "outputs": [
+          {
+            "bytes": 928,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-4/orientation-jpg-4.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-5",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-5.jpg",
+        "outputs": [
+          {
+            "bytes": 921,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-5/orientation-jpg-5.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-6",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-6.jpg",
+        "outputs": [
+          {
+            "bytes": 931,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-6/orientation-jpg-6.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-7",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-7.jpg",
+        "outputs": [
+          {
+            "bytes": 929,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-7/orientation-jpg-7.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-jpg-8",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-jpg-8.jpg",
+        "outputs": [
+          {
+            "bytes": 935,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-jpg-8/orientation-jpg-8.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-1.webp",
+        "outputs": [
+          {
+            "bytes": 626,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-1/orientation-webp-1.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-2",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-2.webp",
+        "outputs": [
+          {
+            "bytes": 707,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-2/orientation-webp-2.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-3",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-3.webp",
+        "outputs": [
+          {
+            "bytes": 634,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-3/orientation-webp-3.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-4",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-4.webp",
+        "outputs": [
+          {
+            "bytes": 624,
+            "height": 13,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-4/orientation-webp-4.png",
+            "warnings": [],
+            "width": 19
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-5",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-5.webp",
+        "outputs": [
+          {
+            "bytes": 632,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-5/orientation-webp-5.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-6",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-6.webp",
+        "outputs": [
+          {
+            "bytes": 632,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-6/orientation-webp-6.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-7",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-7.webp",
+        "outputs": [
+          {
+            "bytes": 638,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-7/orientation-webp-7.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "orientation-out-webp-8",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-webp-8.webp",
+        "outputs": [
+          {
+            "bytes": 638,
+            "height": 19,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/orientation-out-webp-8/orientation-webp-8.png",
+            "warnings": [],
+            "width": 13
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "high-depth-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth.png",
+        "outputs": [
+          {
+            "bytes": 717,
+            "height": 17,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth-png/high-depth.png",
+            "warnings": [],
+            "width": 31
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "high-depth-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth.png",
+        "outputs": [
+          {
+            "bytes": 4136,
+            "height": 17,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth-heic/high-depth.heic",
+            "warnings": [
+              "The source has more than 8 bits per channel; this output format uses 8-bit color."
+            ],
+            "width": 31
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "high-depth-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth.png",
+        "outputs": [
+          {
+            "bytes": 1068,
+            "height": 17,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth-webp/high-depth.webp",
+            "warnings": [
+              "The source has more than 8 bits per channel; this output format uses 8-bit color."
+            ],
+            "width": 31
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "high-depth-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth.png",
+        "outputs": [
+          {
+            "bytes": 1486,
+            "height": 17,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/high-depth-jpg/high-depth.jpg",
+            "warnings": [
+              "The source has more than 8 bits per channel; this output format uses 8-bit color.",
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 31
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "large-exif-heic",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif.png",
+        "outputs": [
+          {
+            "bytes": 88420,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif-heic/large-exif.heic",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "large-exif-webp",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif.png",
+        "outputs": [
+          {
+            "bytes": 71010,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif-webp/large-exif.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "large-exif-png",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif.png",
+        "outputs": [
+          {
+            "bytes": 88704,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif-png/large-exif.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "large-exif-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif.png",
+        "outputs": [
+          {
+            "bytes": 13478,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/large-exif-jpg/large-exif.jpg",
+            "warnings": [
+              "EXIF metadata exceeds the output limit and was omitted",
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "cicp-12-13-0-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-12-13-0-1.png",
+        "outputs": [
+          {
+            "bytes": 976,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-12-13-0-1/cicp-12-13-0-1.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "cicp-9-14-0-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-9-14-0-1.png",
+        "outputs": [
+          {
+            "bytes": 976,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-9-14-0-1/cicp-9-14-0-1.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "cicp-1-13-0-1",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-1-13-0-1.png",
+        "outputs": [
+          {
+            "bytes": 976,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/cicp-1-13-0-1/cicp-1-13-0-1.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "unsupported-cicp-2-2-0-1",
+      "exit": 1,
+      "record": {
+        "error": "Cannot preserve PNG cICP color: The PNG cICP primaries or transfer function are unsupported; retain the original PNG.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-2-2-0-1.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unsupported-cicp-1-1-0-0",
+      "exit": 1,
+      "record": {
+        "error": "Cannot preserve PNG cICP color: Narrow-range PNG transcoding is not supported; retain the original PNG.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-1-1-0-0.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unsupported-cicp-1-13-1-1",
+      "exit": 1,
+      "record": {
+        "error": "Cannot read this image: invalid data",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-1-13-1-1.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unsupported-cicp-9-16-0-1",
+      "exit": 1,
+      "record": {
+        "error": "HDR PNG transcoding is not supported. Choose PNG output to retain the original HDR file.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-16-0-1.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unsupported-cicp-9-16-0-1-copy",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-16-0-1.png",
+        "outputs": [
+          {
+            "bytes": 18596,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-16-0-1-copy/unsupported-cicp-9-16-0-1.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "unsupported-cicp-9-18-0-1",
+      "exit": 1,
+      "record": {
+        "error": "HDR PNG transcoding is not supported. Choose PNG output to retain the original HDR file.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-18-0-1.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unsupported-cicp-9-18-0-1-copy",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-18-0-1.png",
+        "outputs": [
+          {
+            "bytes": 18596,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unsupported-cicp-9-18-0-1-copy/unsupported-cicp-9-18-0-1.png",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "duplicate-cicp",
+      "exit": 1,
+      "record": {
+        "error": "Invalid or repeated PNG cICP color chunk; transcoding was stopped to avoid incorrect color.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/duplicate-cicp.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "bad-cicp-crc",
+      "exit": 1,
+      "record": {
+        "error": "Invalid or repeated PNG cICP color chunk; transcoding was stopped to avoid incorrect color.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/bad-cicp-crc.png",
+        "status": "error"
+      }
+    },
+    {
+      "case": "linear-gamma-jpg",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/linear-gamma.png",
+        "outputs": [
+          {
+            "bytes": 897,
+            "height": 32,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/linear-gamma-jpg/linear-gamma.jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 32
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "no-overwrite",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/synthetic-rgba.png",
+        "outputs": [
+          {
+            "bytes": 13570,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/no-overwrite/synthetic-rgba (2).jpg",
+            "warnings": [
+              "Transparency was composited onto white because JPG does not support alpha."
+            ],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "corrupt-input",
+      "exit": 1,
+      "record": {
+        "error": "Cannot read this HEIC file: Invalid input: Unspecified: File size too small.",
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/corrupted.heic",
+        "status": "error"
+      }
+    },
+    {
+      "case": "unicode-path",
+      "exit": 0,
+      "record": {
+        "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/تصویر شفاف ۱۲.png",
+        "outputs": [
+          {
+            "bytes": 980,
+            "height": 67,
+            "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/unicode-path/تصویر شفاف ۱۲.webp",
+            "warnings": [],
+            "width": 73
+          }
+        ],
+        "status": "ok"
+      }
+    },
+    {
+      "case": "batch-after-error",
+      "exit": 1,
+      "record": [
+        {
+          "error": "Cannot read this HEIC file: Invalid input: Unspecified: File size too small.",
+          "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/corrupted.heic",
+          "status": "error"
+        },
+        {
+          "input": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/seed-heic/synthetic-rgba.heic",
+          "outputs": [
+            {
+              "bytes": 1307,
+              "height": 67,
+              "path": "/workspace/scratch/36caf938433a/native/verification-v2/image-matrix-final-harness/image-matrix-j0o6rp1h/batch-after-error/synthetic-rgba.png",
+              "warnings": [],
+              "width": 73
+            }
+          ],
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "fixture_policy": "All fixtures are synthetic and generated by this script. No user photos, external downloads or user files are used.",
+  "references": [
+    "https://www.w3.org/TR/png-3/#cICP-chunk",
+    "https://github.com/strukturag/libheif/releases/tag/v1.23.6",
+    "https://github.com/Multicorewareinc/x265/releases/tag/4.3"
+  ],
+  "limits": "JPEG is lossy despite quality100/4:4:4. Comparison allows at most two sample levels between independent JPEG decoders. HEIC output is lossless for the supplied RGB8/RGBA8 pipeline data, not source HDR/high precision. This report exercises the actual Rust CLI and linked codecs; Windows GUI QA is separate."
+}

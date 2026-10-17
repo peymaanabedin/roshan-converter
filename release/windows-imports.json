@@ -1,0 +1,31 @@
+{
+  "target": "x86_64-pc-windows-gnullvm",
+  "imports": [
+    "kernel32.dll",
+    "ntdll.dll",
+    "user32.dll",
+    "gdi32.dll",
+    "ole32.dll",
+    "combase.dll",
+    "api-ms-win-core-synch-l1-2-0.dll",
+    "comdlg32.dll",
+    "uxtheme.dll",
+    "comctl32.dll",
+    "shell32.dll",
+    "bcryptprimitives.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-locale-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-filesystem-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "api-ms-win-crt-multibyte-l1-1-0.dll",
+    "ADVAPI32.dll"
+  ],
+  "third_party_dlls": []
+}

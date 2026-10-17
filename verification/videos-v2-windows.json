@@ -1,0 +1,1742 @@
+{
+  "app": "Roshan-a1d447.exe",
+  "version": "2.0.0",
+  "bytes": 24910336,
+  "sha256": "a1d44780be89d259c98c27851a6f93e5b8fa4e30996ac5b2c4bcde9d1858d63b",
+  "platform": "Windows x64 under Wine 11",
+  "embedded_payloads_expected": {
+    "ffmpeg.exe": {
+      "bytes": 15638528,
+      "sha256": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca"
+    },
+    "ffprobe.exe": {
+      "bytes": 15473664,
+      "sha256": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+    }
+  },
+  "checks": [
+    {
+      "name": "mov_to_mp4",
+      "passed": true,
+      "source": "دو صدا MOV.mov",
+      "output": "دو صدا MOV.mp4",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mov_to_mp4_compressed_video_packets_identical",
+      "passed": true
+    },
+    {
+      "name": "avi_to_mp4",
+      "passed": true,
+      "source": "دو صدا AVI.avi",
+      "output": "دو صدا AVI.mp4",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "webm_to_mp4",
+      "passed": true,
+      "source": "دو صدا WEBM.webm",
+      "output": "دو صدا WEBM.mp4",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mp4_to_mov",
+      "passed": true,
+      "source": "دو صدا MP4.mp4",
+      "output": "دو صدا MP4.mov",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mp4_to_mov_compressed_video_packets_identical",
+      "passed": true
+    },
+    {
+      "name": "avi_to_mov",
+      "passed": true,
+      "source": "دو صدا AVI.avi",
+      "output": "دو صدا AVI.mov",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "webm_to_mov",
+      "passed": true,
+      "source": "دو صدا WEBM.webm",
+      "output": "دو صدا WEBM.mov",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mp4_to_avi",
+      "passed": true,
+      "source": "دو صدا MP4.mp4",
+      "output": "دو صدا MP4.avi",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mov_to_avi",
+      "passed": true,
+      "source": "دو صدا MOV.mov",
+      "output": "دو صدا MOV.avi",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "webm_to_avi",
+      "passed": true,
+      "source": "دو صدا WEBM.webm",
+      "output": "دو صدا WEBM.avi",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mp4_to_webm",
+      "passed": true,
+      "source": "دو صدا MP4.mp4",
+      "output": "دو صدا MP4.webm",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mov_to_webm",
+      "passed": true,
+      "source": "دو صدا MOV.mov",
+      "output": "دو صدا MOV.webm",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "avi_to_webm",
+      "passed": true,
+      "source": "دو صدا AVI.avi",
+      "output": "دو صدا AVI.webm",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.008,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "opus",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "odd_to_mp4",
+      "passed": true,
+      "source": "odd-321x181.mov",
+      "output": "odd-321x181.mp4",
+      "before": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv444p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      },
+      "after": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv444p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      }
+    },
+    {
+      "name": "odd_to_avi",
+      "passed": true,
+      "source": "odd-321x181.mov",
+      "output": "odd-321x181.avi",
+      "before": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv444p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      },
+      "after": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "ffv1",
+        "pix_fmt": "yuv444p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      }
+    },
+    {
+      "name": "odd_to_webm",
+      "passed": true,
+      "source": "odd-321x181.mov",
+      "output": "odd-321x181.webm",
+      "before": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv444p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      },
+      "after": {
+        "width": 321,
+        "height": 181,
+        "coded_width": 321,
+        "coded_height": 181,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": []
+      }
+    },
+    {
+      "name": "rotation_to_mov",
+      "passed": true,
+      "source": "rotate90.mp4",
+      "output": "rotate90.mov",
+      "before": {
+        "width": 180,
+        "height": 320,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 90,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 180,
+        "height": 320,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 90,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "rotation_to_avi",
+      "passed": true,
+      "source": "rotate90.mp4",
+      "output": "rotate90.avi",
+      "before": {
+        "width": 180,
+        "height": 320,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 90,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "aac",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 0,
+            "bits_per_raw_sample": null
+          }
+        ]
+      },
+      "after": {
+        "width": 180,
+        "height": 320,
+        "coded_width": 180,
+        "coded_height": 320,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          },
+          {
+            "codec_name": "pcm_s16le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 16,
+            "bits_per_raw_sample": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "rotated_decoded_frame_matches",
+      "passed": true,
+      "psnr_db": 28.089
+    },
+    {
+      "name": "hdr_pq_to_webm",
+      "passed": true,
+      "source": "pq-bt2020-10bit.mov",
+      "output": "pq-bt2020-10bit.webm",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p10le",
+        "color_transfer": "smpte2084",
+        "color_primaries": "bt2020",
+        "color_space": "bt2020nc",
+        "audio": []
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "vp9",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": []
+      }
+    },
+    {
+      "name": "HDR_explicit_BT709_tone_map_warning",
+      "passed": true
+    },
+    {
+      "name": "pcm24_to_avi",
+      "passed": true,
+      "source": "audio-24-bit.mov",
+      "output": "audio-24-bit.avi",
+      "before": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "h264",
+        "pix_fmt": "yuv420p",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "audio": [
+          {
+            "codec_name": "pcm_s24le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 24,
+            "bits_per_raw_sample": "24"
+          },
+          {
+            "codec_name": "pcm_s24le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 24,
+            "bits_per_raw_sample": "24"
+          }
+        ]
+      },
+      "after": {
+        "width": 320,
+        "height": 180,
+        "coded_width": 320,
+        "coded_height": 180,
+        "rotation": 0,
+        "fps": "25/1",
+        "duration": 1.0,
+        "video_codec": "mpeg4",
+        "pix_fmt": "yuv420p",
+        "color_transfer": null,
+        "color_primaries": null,
+        "color_space": null,
+        "audio": [
+          {
+            "codec_name": "pcm_s24le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 24,
+            "bits_per_raw_sample": "24"
+          },
+          {
+            "codec_name": "pcm_s24le",
+            "channels": 2,
+            "sample_rate": "48000",
+            "bits_per_sample": 24,
+            "bits_per_raw_sample": "24"
+          }
+        ]
+      }
+    },
+    {
+      "name": "corrupt_input_isolated_duplicates_originals_preserved",
+      "passed": true
+    },
+    {
+      "name": "same_container_is_byte_identical",
+      "passed": true
+    },
+    {
+      "name": "HLG_10bit_to_BT709_SDR",
+      "passed": true,
+      "width": 640,
+      "height": 360
+    },
+    {
+      "name": "actual_embedded_worker_SHA256_and_normal_exit_cleanup",
+      "passed": true,
+      "workers_observed": 2
+    }
+  ],
+  "cli_batches": [
+    {
+      "name": "matrix_to_mp4",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 1.974,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MOV.mov",
+            "outputs": [
+              {
+                "bytes": 106987,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mp4\\دو صدا MOV.mp4",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا AVI.avi",
+            "outputs": [
+              {
+                "bytes": 112873,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mp4\\دو صدا AVI.mp4",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا WEBM.webm",
+            "outputs": [
+              {
+                "bytes": 105587,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mp4\\دو صدا WEBM.mp4",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "mp4"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "matrix_to_mov",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 1.631,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MP4.mp4",
+            "outputs": [
+              {
+                "bytes": 107141,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mov\\دو صدا MP4.mov",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا AVI.avi",
+            "outputs": [
+              {
+                "bytes": 436633,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mov\\دو صدا AVI.mov",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا WEBM.webm",
+            "outputs": [
+              {
+                "bytes": 105741,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_mov\\دو صدا WEBM.mov",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "mov"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "matrix_to_avi",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 1.611,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MP4.mp4",
+            "outputs": [
+              {
+                "bytes": 587430,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_avi\\دو صدا MP4.avi",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MOV.mov",
+            "outputs": [
+              {
+                "bytes": 587430,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_avi\\دو صدا MOV.avi",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا WEBM.webm",
+            "outputs": [
+              {
+                "bytes": 585312,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_avi\\دو صدا WEBM.avi",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "avi"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "matrix_to_webm",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 2.704,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MP4.mp4",
+            "outputs": [
+              {
+                "bytes": 114241,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_webm\\دو صدا MP4.webm",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MOV.mov",
+            "outputs": [
+              {
+                "bytes": 114260,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_webm\\دو صدا MOV.webm",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا AVI.avi",
+            "outputs": [
+              {
+                "bytes": 113862,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\matrix_to_webm\\دو صدا AVI.webm",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "webm"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "odd_to_mp4",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.633,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\windows\\fixtures\\odd-321x181.mov",
+            "outputs": [
+              {
+                "bytes": 9980,
+                "height": 181,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\odd_to_mp4\\odd-321x181.mp4",
+                "warnings": [],
+                "width": 321
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "mp4"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "odd_to_avi",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.927,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\windows\\fixtures\\odd-321x181.mov",
+            "outputs": [
+              {
+                "bytes": 202258,
+                "height": 181,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\odd_to_avi\\odd-321x181.avi",
+                "warnings": [
+                  "AVI uses lossless FFV1 to retain the odd dimensions; a compatible player is required."
+                ],
+                "width": 321
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "avi"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "odd_to_webm",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 1.1,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\windows\\fixtures\\odd-321x181.mov",
+            "outputs": [
+              {
+                "bytes": 12245,
+                "height": 181,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\odd_to_webm\\odd-321x181.webm",
+                "warnings": [],
+                "width": 321
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "webm"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "rotation_to_mov",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.68,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\rotate90.mp4",
+            "outputs": [
+              {
+                "bytes": 107141,
+                "height": 320,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\rotation_to_mov\\rotate90.mov",
+                "warnings": [],
+                "width": 180
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "mov"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "rotation_to_avi",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.717,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\rotate90.mp4",
+            "outputs": [
+              {
+                "bytes": 587858,
+                "height": 320,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\rotation_to_avi\\rotate90.avi",
+                "warnings": [],
+                "width": 180
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "avi"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "hdr_pq_to_webm",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 1.148,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\windows\\fixtures\\pq-bt2020-10bit.mov",
+            "outputs": [
+              {
+                "bytes": 61541,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\hdr_pq_to_webm\\pq-bt2020-10bit.webm",
+                "warnings": [
+                  "HDR video was tone-mapped to standard SDR for this output codec."
+                ],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "webm"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "pcm24_to_avi",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 0.675,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\audio-24-bit.mov",
+            "outputs": [
+              {
+                "bytes": 779478,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\خروجی آزمون\\pcm24_to_avi\\audio-24-bit.avi",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "avi"
+      },
+      "stderr": "",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "corrupt_and_duplicate",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "elapsed_seconds": 0.78,
+      "runtime_cleaned": null,
+      "observed_extracted_hashes": {},
+      "report": {
+        "app": "Roshan Converter",
+        "decoder": "1.23.6",
+        "files": [
+          {
+            "error": "Cannot inspect this video: Truncating packet of size 10611 to 30\r\n[matroska,webm @ 00007ffffe7f13c0] EBML header parsing failed\r\n<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\corrupt-first.webm: Invalid data found when processing input",
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\corrupt-first.webm",
+            "status": "error"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MP4.mp4",
+            "outputs": [
+              {
+                "bytes": 107045,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\no-overwrite\\دو صدا MP4 (2).mp4",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          },
+          {
+            "input": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\دو صدا MP4.mp4",
+            "outputs": [
+              {
+                "bytes": 107045,
+                "height": 180,
+                "path": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\no-overwrite\\دو صدا MP4 (3).mp4",
+                "warnings": [],
+                "width": 320
+              }
+            ],
+            "status": "ok"
+          }
+        ],
+        "image_output": "jpg",
+        "preserve_metadata": true,
+        "version": "2.0.0",
+        "video_output": "mp4"
+      },
+      "stderr": "<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\corrupt-first.webm: Cannot inspect this video: Truncating packet of size 10611 to 30\r\n[matroska,webm @ 00007ffffe7f13c0] EBML header parsing failed\r\n<workspace>\\roshan-heic\\video-native\\qa\\app-windows\\fixtures\\corrupt-first.webm: Invalid data found when processing input\n1 file(s) could not be converted\n",
+      "runtime_observation_note": "Initial custom-TEMP observation was superseded by the dedicated actual-Wine-temp check."
+    },
+    {
+      "name": "hlg_tonemap_and_actual_runtime",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_seconds": 3.0,
+      "runtime_cleaned": true,
+      "observed_extracted_hashes": {
+        "RoshanConverter-380-18df5501a2b2118c-0/ffmpeg.exe": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca",
+        "RoshanConverter-380-18df5501a2b2118c-0/ffprobe.exe": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+      },
+      "report": {
+        "input": "hlg-bt2020-10bit.mov",
+        "output": "hlg-bt2020-10bit.webm",
+        "warnings": [
+          "HDR video was tone-mapped to standard SDR for this output codec."
+        ]
+      }
+    }
+  ],
+  "passed": true,
+  "test_scripts": [
+    {
+      "path": "video-native/verify_app_windows.py",
+      "sha256": "2fe4b65d0fb72e0c5d79763d821c6f32aaaee3f0458e62088c390778d5f05073"
+    },
+    {
+      "path": "video-native/verify_runtime_windows.py",
+      "sha256": "99e6f2a8278924a1f5a430e83739014375fa4c50e0101f6c294844c9945fefc3"
+    }
+  ]
+}

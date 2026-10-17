@@ -1,0 +1,7 @@
+{
+  "result": "passed",
+  "runner": "Wine 11",
+  "exit": 0,
+  "stdout": "PASS: PQ, HLG, gamut matrices, ICC transfer curve, strict SDR cICP profiles, premultiplied linear alpha and straight RGBA, 10-bit range, and neutral HDR RGB/RGBA tone mapping.\n",
+  "stderr": ""
+}

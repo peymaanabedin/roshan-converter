@@ -1,0 +1,22 @@
+{
+  "linux": {
+    "ffmpeg": {
+      "bytes": 16054952,
+      "sha256": "28b0333b74f49efeb78ec438e150881c2bf59c7232138367ae97aaa999542c7e"
+    },
+    "ffprobe": {
+      "bytes": 15882856,
+      "sha256": "d6165cfc391575d7243beaaaac9e6983f7befb8daddb279893b6fb303b0d2312"
+    }
+  },
+  "windows": {
+    "ffmpeg.exe": {
+      "bytes": 15638528,
+      "sha256": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca"
+    },
+    "ffprobe.exe": {
+      "bytes": 15473664,
+      "sha256": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+    }
+  }
+}

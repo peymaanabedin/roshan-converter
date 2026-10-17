@@ -1,0 +1,257 @@
+
+File: native/build/native-smoke-windows.exe
+Format: COFF-x86-64
+Arch: x86_64
+AddressSize: 64bit
+Import {
+  Name: api-ms-win-crt-stdio-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5328
+  ImportAddressTableRVA: 0x2B5968
+  Symbol: __acrt_iob_func (0)
+  Symbol: __p__commode (0)
+  Symbol: __p__fmode (0)
+  Symbol: __stdio_common_vfprintf (0)
+  Symbol: __stdio_common_vfwprintf (0)
+  Symbol: __stdio_common_vsprintf (0)
+  Symbol: _fseeki64 (0)
+  Symbol: _ftelli64 (0)
+  Symbol: _lseek (0)
+  Symbol: _wfopen (0)
+  Symbol: _write (0)
+  Symbol: fclose (0)
+  Symbol: fflush (0)
+  Symbol: fgetwc (0)
+  Symbol: fopen (0)
+  Symbol: fputc (0)
+  Symbol: fputwc (0)
+  Symbol: fread (0)
+  Symbol: fseek (0)
+  Symbol: ftell (0)
+  Symbol: fwrite (0)
+  Symbol: getc (0)
+  Symbol: putchar (0)
+  Symbol: setbuf (0)
+  Symbol: setvbuf (0)
+  Symbol: ungetc (0)
+  Symbol: ungetwc (0)
+}
+Import {
+  Name: api-ms-win-crt-runtime-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5408
+  ImportAddressTableRVA: 0x2B5A48
+  Symbol: __p___argc (0)
+  Symbol: __p___argv (0)
+  Symbol: __sys_nerr (0)
+  Symbol: _assert (0)
+  Symbol: _beginthreadex (0)
+  Symbol: _cexit (0)
+  Symbol: _configure_narrow_argv (0)
+  Symbol: _crt_atexit (0)
+  Symbol: _errno (0)
+  Symbol: _exit (0)
+  Symbol: _initialize_narrow_environment (0)
+  Symbol: _initterm (0)
+  Symbol: _initterm_e (0)
+  Symbol: _seh_filter_exe (0)
+  Symbol: _set_app_type (0)
+  Symbol: _set_invalid_parameter_handler (0)
+  Symbol: abort (0)
+  Symbol: exit (0)
+  Symbol: strerror (0)
+  Symbol: strerror_s (0)
+}
+Import {
+  Name: api-ms-win-crt-locale-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B54B0
+  ImportAddressTableRVA: 0x2B5AF0
+  Symbol: ___lc_codepage_func (0)
+  Symbol: ___mb_cur_max_func (0)
+  Symbol: __pctype_func (0)
+  Symbol: _configthreadlocale (0)
+  Symbol: _create_locale (0)
+  Symbol: _free_locale (0)
+  Symbol: localeconv (0)
+  Symbol: setlocale (0)
+}
+Import {
+  Name: api-ms-win-crt-heap-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B54F8
+  ImportAddressTableRVA: 0x2B5B38
+  Symbol: _aligned_free (0)
+  Symbol: _aligned_malloc (0)
+  Symbol: _msize (0)
+  Symbol: _set_new_mode (0)
+  Symbol: calloc (0)
+  Symbol: free (0)
+  Symbol: malloc (0)
+  Symbol: realloc (0)
+}
+Import {
+  Name: api-ms-win-crt-private-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5540
+  ImportAddressTableRVA: 0x2B5B80
+  Symbol: memchr (0)
+  Symbol: memcmp (0)
+  Symbol: memcpy (0)
+  Symbol: memmove (0)
+}
+Import {
+  Name: api-ms-win-crt-string-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5568
+  ImportAddressTableRVA: 0x2B5BA8
+  Symbol: _iswalpha_l (0)
+  Symbol: _iswcntrl_l (0)
+  Symbol: _iswdigit_l (0)
+  Symbol: _iswlower_l (0)
+  Symbol: _iswprint_l (0)
+  Symbol: _iswpunct_l (0)
+  Symbol: _iswspace_l (0)
+  Symbol: _iswupper_l (0)
+  Symbol: _iswxdigit_l (0)
+  Symbol: _strcoll_l (0)
+  Symbol: _strdup (0)
+  Symbol: _strxfrm_l (0)
+  Symbol: _tolower_l (0)
+  Symbol: _toupper_l (0)
+  Symbol: _towlower_l (0)
+  Symbol: _towupper_l (0)
+  Symbol: _wcscoll_l (0)
+  Symbol: _wcsxfrm_l (0)
+  Symbol: isdigit (0)
+  Symbol: isspace (0)
+  Symbol: isxdigit (0)
+  Symbol: mbrlen (0)
+  Symbol: memset (0)
+  Symbol: strcat (0)
+  Symbol: strcmp (0)
+  Symbol: strcpy (0)
+  Symbol: strlen (0)
+  Symbol: strncpy (0)
+  Symbol: strnlen (0)
+  Symbol: tolower (0)
+  Symbol: toupper (0)
+  Symbol: wcslen (0)
+  Symbol: wcsnlen (0)
+}
+Import {
+  Name: KERNEL32.dll
+  ImportLookupTableRVA: 0x2B5678
+  ImportAddressTableRVA: 0x2B5CB8
+  Symbol: AcquireSRWLockExclusive (0)
+  Symbol: AreFileApisANSI (0)
+  Symbol: CloseHandle (0)
+  Symbol: CreateMutexA (0)
+  Symbol: DeleteCriticalSection (0)
+  Symbol: EnterCriticalSection (0)
+  Symbol: FlsAlloc (0)
+  Symbol: FlsGetValue (0)
+  Symbol: FlsSetValue (0)
+  Symbol: FormatMessageA (0)
+  Symbol: GetACP (0)
+  Symbol: GetActiveProcessorCount (0)
+  Symbol: GetCurrentThreadId (0)
+  Symbol: GetLastError (0)
+  Symbol: GetLocaleInfoEx (0)
+  Symbol: GetModuleHandleW (0)
+  Symbol: GetProcAddress (0)
+  Symbol: GetSystemTimeAsFileTime (0)
+  Symbol: GetThreadId (0)
+  Symbol: InitOnceExecuteOnce (0)
+  Symbol: InitializeCriticalSection (0)
+  Symbol: LeaveCriticalSection (0)
+  Symbol: LocalFree (0)
+  Symbol: MultiByteToWideChar (0)
+  Symbol: QueryPerformanceCounter (0)
+  Symbol: QueryPerformanceFrequency (0)
+  Symbol: RaiseException (0)
+  Symbol: ReleaseMutex (0)
+  Symbol: ReleaseSRWLockExclusive (0)
+  Symbol: RtlCaptureContext (0)
+  Symbol: RtlLookupFunctionEntry (0)
+  Symbol: RtlRestoreContext (0)
+  Symbol: RtlUnwindEx (0)
+  Symbol: RtlVirtualUnwind (0)
+  Symbol: SetUnhandledExceptionFilter (0)
+  Symbol: Sleep (0)
+  Symbol: SleepConditionVariableSRW (0)
+  Symbol: SwitchToThread (0)
+  Symbol: TryAcquireSRWLockExclusive (0)
+  Symbol: TryEnterCriticalSection (0)
+  Symbol: VirtualProtect (0)
+  Symbol: VirtualQuery (0)
+  Symbol: WaitForSingleObject (0)
+  Symbol: WaitForSingleObjectEx (0)
+  Symbol: WakeAllConditionVariable (0)
+  Symbol: WakeConditionVariable (0)
+  Symbol: WideCharToMultiByte (0)
+}
+Import {
+  Name: api-ms-win-crt-math-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B57F8
+  ImportAddressTableRVA: 0x2B5E38
+  Symbol: __setusermatherr (0)
+  Symbol: atan2 (0)
+  Symbol: ceil (0)
+  Symbol: ceilf (0)
+  Symbol: cos (0)
+  Symbol: exp (0)
+  Symbol: floor (0)
+  Symbol: floorf (0)
+  Symbol: log (0)
+  Symbol: log10 (0)
+  Symbol: lroundf (0)
+  Symbol: pow (0)
+  Symbol: sin (0)
+  Symbol: sqrt (0)
+}
+Import {
+  Name: api-ms-win-crt-filesystem-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5870
+  ImportAddressTableRVA: 0x2B5EB0
+  Symbol: _lock_file (0)
+  Symbol: _unlink (0)
+  Symbol: _unlock_file (0)
+  Symbol: remove (0)
+}
+Import {
+  Name: api-ms-win-crt-environment-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5898
+  ImportAddressTableRVA: 0x2B5ED8
+  Symbol: __p__environ (0)
+  Symbol: getenv (0)
+}
+Import {
+  Name: api-ms-win-crt-convert-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B58B0
+  ImportAddressTableRVA: 0x2B5EF0
+  Symbol: _strtod_l (0)
+  Symbol: atoi (0)
+  Symbol: mbrtowc (0)
+  Symbol: mbsrtowcs (0)
+  Symbol: strtof (0)
+  Symbol: strtol (0)
+  Symbol: strtoll (0)
+  Symbol: strtoul (0)
+  Symbol: strtoull (0)
+  Symbol: wcrtomb (0)
+  Symbol: wcrtomb_s (0)
+  Symbol: wcstod (0)
+  Symbol: wcstol (0)
+  Symbol: wcstoll (0)
+  Symbol: wcstoul (0)
+  Symbol: wcstoull (0)
+}
+Import {
+  Name: api-ms-win-crt-time-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5938
+  ImportAddressTableRVA: 0x2B5F78
+  Symbol: _gmtime64_s (0)
+  Symbol: _strftime_l (0)
+  Symbol: _time64 (0)
+}
+Import {
+  Name: api-ms-win-crt-multibyte-l1-1-0.dll
+  ImportLookupTableRVA: 0x2B5958
+  ImportAddressTableRVA: 0x2B5F98
+  Symbol: _mbtowc_l (0)
+}

@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "exit_code": 0,
+  "tests": 7,
+  "platform": "Windows x64 under Wine11",
+  "test_executable_sha256": "bb8dc1c5c3ee7d43dc54b39d1989d8e1fb05a0916fa07cf904362ed4ea0ea807",
+  "source_sha256": {
+    "video_tools.rs": "a39db561c71f21ae53a5057d37cdc987a2f53da8434d917bddbe78674d3b0693",
+    "metadata.rs": "bf14b4c2d117924470e7ab1644b95d0989849de3d771c39e315ce1827c9d47e0",
+    "image_engine.rs": "99f715e260828be551ce40bd9f65557ec86d46cca018a862e9c4a0d6786f882b",
+    "video_engine.rs": "613d42e6d580b727b35b26b8b08a272346ed3599ee82dacd6ab2b21e7a3d52f4",
+    "safe_output.rs": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a",
+    "engine.rs": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+    "main.rs": "abf09cd93f03b3c69e2740e1dd73342d65e7bfd2f465ca8d8a0ea6faa8b4718b",
+    "gui.rs": "8e5508ffdc635d2e539b2614e2a44bfeef24db3196ee7f7549cd84db9790701b",
+    "color.rs": "24095747ec6646dfca986842e63b41399989aca98cf5d951deee672a830a98fc"
+  },
+  "cleanup_regression": "A real exclusive Windows handle denies deletion; after a 150 ms release, Temporary Drop removes the file through bounded retry.",
+  "log": "rust-unit-tests-windows-v2.txt"
+}

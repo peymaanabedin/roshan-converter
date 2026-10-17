@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ffmpeg",
+    "version": "9.0.2",
+    "url": "https://ffmpeg.org/releases/ffmpeg-9.0.2.tar.xz",
+    "filename": "ffmpeg-9.0.2.tar.xz",
+    "sha256": "8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e",
+    "bytes": 12040788,
+    "license": "GPL-3.0-or-later (configured --enable-gpl --enable-version3; source includes LGPL and permissive files)"
+  },
+  {
+    "name": "opus",
+    "version": "1.6.1",
+    "url": "https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz",
+    "filename": "opus-1.6.1.tar.gz",
+    "sha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+    "bytes": 10472813,
+    "license": "BSD-3-Clause and upstream patent grants"
+  },
+  {
+    "name": "libvpx",
+    "version": "1.17.0",
+    "url": "https://github.com/webmproject/libvpx/archive/refs/tags/v1.17.0.tar.gz",
+    "filename": "libvpx-1.17.0.tar.gz",
+    "sha256": "1020f184046187baa2985dbde38e0691f49c44088bca7a1842b0236c6081dc0a",
+    "bytes": 5670546,
+    "license": "BSD-3-Clause and WebM patent grant"
+  },
+  {
+    "name": "x264",
+    "version": "0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee",
+    "url": "https://code.videolan.org/videolan/x264/-/archive/0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee/x264-0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee.tar.gz",
+    "filename": "x264-0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee.tar.gz",
+    "sha256": "d0967a1348c85dfde363bb52610403be898171493100561efa0dd05d5fd1ae50",
+    "bytes": 1040667,
+    "license": "GPL-2.0-or-later"
+  },
+  {
+    "name": "dav1d",
+    "version": "1.5.4",
+    "url": "https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz",
+    "filename": "dav1d-1.5.4.tar.xz",
+    "sha256": "686616b7c69eb88d44459391ab25cac13b6647a3b288835c5784e71c1514a5c5",
+    "bytes": 1038852,
+    "license": "BSD-2-Clause and upstream patent notice"
+  },
+  {
+    "name": "zimg",
+    "version": "3.0.6",
+    "url": "https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.6.tar.gz",
+    "filename": "zimg-3.0.6.tar.gz",
+    "sha256": "be89390f13a5c9b2388ce0f44a5e89364a20c1c57ce46d382b1fcc3967057577",
+    "bytes": 326725,
+    "license": "WTFPL-2.0"
+  }
+]

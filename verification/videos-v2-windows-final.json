@@ -1,0 +1,314 @@
+{
+  "app": "Roshan Converter",
+  "version": "2.0.0",
+  "platform": "Windows x64 executable under isolated Wine 11",
+  "executable": "Roshan-HEIC.exe",
+  "bytes": 24910336,
+  "sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+  "passed": true,
+  "pass_scope": "Final mixed conversion, pixel dimensions, HLG-to-BT709 signaling, exact embedded-worker hashes, and runtime absence immediately after application exit in the successful warm-server command.",
+  "mixed_smoke": {
+    "name": "final_binary_mixed_image_video_smoke",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 3.496,
+    "cli_report": "13-hlg-runtime-d7ce29f1538b-18df5623a23093b1.json",
+    "runtime_cleaned": true,
+    "observed_extracted_hashes": {
+      "RoshanConverter-328-18df5623abf1aff0-0/ffmpeg.exe": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca",
+      "RoshanConverter-328-18df5623abf1aff0-0/ffprobe.exe": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+    },
+    "report": {
+      "input": "hlg-bt2020-10bit.mov",
+      "output": "hlg-bt2020-10bit.webm",
+      "warnings": [
+        "HDR video was tone-mapped to standard SDR for this output codec."
+      ]
+    },
+    "app": "Roshan-d7ce29.exe",
+    "sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+    "bytes": 24910336,
+    "image_output": {
+      "width": 32,
+      "height": 24,
+      "format": "jpg"
+    },
+    "passed": true,
+    "runtime_cleanup_observation_scope": "Observed immediately after application exit, before the enclosing execution command returned; later filesystem synchronization is outside this assertion.",
+    "output_partial_cleanup_in_same_command": "Not separately asserted by this script; post-command visibility is recorded below."
+  },
+  "full_matrix_reference": {
+    "report": "videos-v2-windows.json",
+    "executable_sha256": "a1d44780be89d259c98c27851a6f93e5b8fa4e30996ac5b2c4bcde9d1858d63b",
+    "checks_passed": 27,
+    "cli_batches": 13
+  },
+  "payload_hash_comparison": {
+    "identical_to_matrix_payloads": true,
+    "observed_final_payloads": {
+      "ffmpeg.exe": "d6bbdb7dc5a3a9dcb39297e7d239161b336200a399219de304d1b61a2bde9aca",
+      "ffprobe.exe": "2049f969523741c4f3f8293539a52caf3ccb20dfd4a2e4060333eff6a5e437b0"
+    }
+  },
+  "current_backend_source_sha256": {
+    "src/video_engine.rs": "613d42e6d580b727b35b26b8b08a272346ed3599ee82dacd6ab2b21e7a3d52f4",
+    "src/video_tools.rs": "a39db561c71f21ae53a5057d37cdc987a2f53da8434d917bddbe78674d3b0693",
+    "src/engine.rs": "1f6d7aeb44af905bfa6c0ecb044bf99cd17b4ce39df64d61532135045c663e68",
+    "src/safe_output.rs": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a",
+    "src/main.rs": "abf09cd93f03b3c69e2740e1dd73342d65e7bfd2f465ca8d8a0ea6faa8b4718b",
+    "build.rs": "33201b294bc987bc9a1e7dcc2666813b5196f544e7de53f325f4be2c31f43c6f",
+    "Cargo.toml": "dc5d1ae557efb4a32ee3eb191d690377a4a772e6c34dfe589fbe970f875e3dd2",
+    "Cargo.lock": "76b8d49d2e5b5a52a94bc37c73e41d3c0be2a3c9b366838f95471bf7884a34a1"
+  },
+  "historical_source_comparison": {
+    "independent_a1d447_baseline_captured": false,
+    "note": "Release work log records only gui.rs changes between a1d447 and f000; independent historical video source hash baseline was not captured for a1d447. The f000 smoke did capture source hashes, and its comparison with this release is recorded separately."
+  },
+  "changes_since_f000_smoke": {
+    "predecessor_executable_sha256": "f000f4547274f24e70c1a85d565945f0aac5f9604c8c56f3ade8153204228788",
+    "independent_source_hash_baseline_captured": true,
+    "changed_backend_sources": {
+      "src/safe_output.rs": {
+        "predecessor": "266dc083f9639c16845cadf41e30a4a9c5f1632be13acff14c71b8b6d8bfe023",
+        "final": "ecee81ea7707ce7d31ca1ecbd68eac49df4c868379ffc6c2ecf7229d962bd59a"
+      }
+    },
+    "description": "Temporary-output cleanup retries only Windows access/sharing/lock failures (5/32/33), every 50 ms up to one second; missing files count as cleaned. The root regression uses a real Windows handle temporarily denying deletion."
+  },
+  "environment_cleanup_observations": {
+    "scope": "Isolated Wine 11 on the executor filesystem; physical Windows hardware was not tested.",
+    "cold_server_run": {
+      "conversion_exit_code": 0,
+      "mixed_outputs_valid": true,
+      "runtime_absence_assertion_passed": false,
+      "after_command_native_visibility": {
+        "utc": "2026-10-17T14:02:52.737259+00:00",
+        "app_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+        "helper_sha256": "5ac7de182dfdb96e118f22718411ea9831a30fccfb2b89091dd9ddb45a34ac61",
+        "read_only": true,
+        "exit_code": 0,
+        "native_windows_visibility": [
+          {
+            "index": 1,
+            "get_attributes": 34,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 0,
+            "write_filetime": 134367191427977789,
+            "path_basename": ".roshan-32-18df55d34c33382c-0.partial",
+            "drive": "Z:"
+          },
+          {
+            "index": 2,
+            "get_attributes": 32,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 300816,
+            "write_filetime": 134367191445017630,
+            "path_basename": "hlg-bt2020-10bit.webm",
+            "drive": "Z:"
+          },
+          {
+            "index": 3,
+            "get_attributes": 16,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 0,
+            "write_filetime": 134367191424457819,
+            "path_basename": "RoshanConverter-32-18df55d333068f5c-0",
+            "drive": "Z:"
+          },
+          {
+            "index": 4,
+            "get_attributes": 32,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 15638528,
+            "write_filetime": 134367191424377820,
+            "path_basename": "ffmpeg.exe",
+            "drive": "Z:"
+          },
+          {
+            "index": 5,
+            "get_attributes": 32,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 15473664,
+            "write_filetime": 134367191426057806,
+            "path_basename": "ffprobe.exe",
+            "drive": "Z:"
+          },
+          {
+            "index": 6,
+            "get_attributes": 32,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 15638528,
+            "write_filetime": 134367191424377820,
+            "path_basename": "ffmpeg.exe",
+            "drive": "C:"
+          }
+        ],
+        "host": [
+          {
+            "basename": ".roshan-32-18df55d34c33382c-0.partial",
+            "exists": true,
+            "stat": {
+              "mode": 33188,
+              "inode": 927384,
+              "device": 27,
+              "nlink": 1,
+              "uid": 0,
+              "gid": 0,
+              "bytes": 0,
+              "access": 1792245546,
+              "modified": 1792245542,
+              "changed": 1792245546
+            }
+          },
+          {
+            "basename": "hlg-bt2020-10bit.webm",
+            "exists": true,
+            "stat": {
+              "mode": 33188,
+              "inode": 927352,
+              "device": 27,
+              "nlink": 1,
+              "uid": 0,
+              "gid": 0,
+              "bytes": 300816,
+              "access": 1792245547,
+              "modified": 1792245544,
+              "changed": 1792245544
+            }
+          },
+          {
+            "basename": "RoshanConverter-32-18df55d333068f5c-0",
+            "exists": true,
+            "stat": {
+              "mode": 16877,
+              "inode": 1048621,
+              "device": 27,
+              "nlink": 2,
+              "uid": 0,
+              "gid": 0,
+              "bytes": 4096,
+              "access": 1792245546,
+              "modified": 1792245542,
+              "changed": 1792245546
+            }
+          },
+          {
+            "basename": "ffmpeg.exe",
+            "exists": true,
+            "stat": {
+              "mode": 33261,
+              "inode": 1048622,
+              "device": 27,
+              "nlink": 1,
+              "uid": 0,
+              "gid": 0,
+              "bytes": 15638528,
+              "access": 1792245546,
+              "modified": 1792245542,
+              "changed": 1792245546
+            }
+          },
+          {
+            "basename": "ffprobe.exe",
+            "exists": true,
+            "stat": {
+              "mode": 33261,
+              "inode": 1048624,
+              "device": 27,
+              "nlink": 1,
+              "uid": 0,
+              "gid": 0,
+              "bytes": 15473664,
+              "access": 1792245546,
+              "modified": 1792245542,
+              "changed": 1792245546
+            }
+          }
+        ]
+      }
+    },
+    "warm_server_run": {
+      "conversion_exit_code": 0,
+      "mixed_outputs_valid": true,
+      "runtime_absence_assertion_passed_inside_command": true,
+      "after_command_native_visibility": {
+        "app_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+        "cli_report": "13-hlg-runtime-d7ce29f1538b-18df5623a23093b1.json",
+        "helper_sha256": "5ac7de182dfdb96e118f22718411ea9831a30fccfb2b89091dd9ddb45a34ac61",
+        "read_only": true,
+        "exit_code": 0,
+        "checks": [
+          {
+            "index": 1,
+            "get_attributes": 4294967295,
+            "attributes_error": 123,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 0,
+            "write_filetime": 134367194885703953,
+            "subject": "output partial wildcard"
+          },
+          {
+            "index": 2,
+            "get_attributes": 16,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 0,
+            "write_filetime": 134367194880944000,
+            "subject": "owned runtime directory"
+          },
+          {
+            "index": 3,
+            "get_attributes": 32,
+            "attributes_error": 0,
+            "find_success": true,
+            "find_error": 0,
+            "bytes": 15638528,
+            "write_filetime": 134367194880869351,
+            "subject": "owned ffmpeg worker"
+          }
+        ],
+        "host_partials": [
+          {
+            "basename": ".roshan-328-18df5623cb207500-0.partial",
+            "bytes": 0,
+            "mtime_ns": 1792245888570395338,
+            "ctime_ns": 1792245892891644646
+          }
+        ],
+        "host_runtime_directory_remaining": true
+      }
+    },
+    "observed_sequence": "In the warm run the verifier saw the owned runtime directory absent after application exit and passed. A subsequent execution command saw that same directory present again, together with the original zero-byte video reservation; native Windows file queries then confirmed visibility.",
+    "interpretation": "The across-command reappearance is consistent with executor/Wine filesystem synchronization. This is an inference from timing, not proof of behavior on physical Windows.",
+    "coverage_limit": "The final smoke verifies conversion, bundled-worker hashes and in-command runtime cleanup. It does not establish durable cleanup across this environment's command boundaries. The retained artifacts were preserved for diagnosis."
+  },
+  "test_scripts": [
+    {
+      "path": "video-native/verify_app_windows.py",
+      "sha256": "2fe4b65d0fb72e0c5d79763d821c6f32aaaee3f0458e62088c390778d5f05073"
+    },
+    {
+      "path": "video-native/verify_runtime_windows.py",
+      "sha256": "ff0110bba76621d7be0fbd6cf45448735fc4c1f69cc7aa55c442cd439e5e73d4"
+    }
+  ],
+  "diagnostic_source": {
+    "path": "tests/windows_file_visibility.c",
+    "sha256": "df1cd47fdb642762c42c9faace93899190736871cd1ce47159eefe00c96609d6",
+    "behavior": "Read-only GetFileAttributesW and FindFirstFileW checks; no deletion or product changes."
+  }
+}

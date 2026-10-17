@@ -1,0 +1,49 @@
+{
+  "result": "passed",
+  "target": "windows",
+  "runner": "/workspace/scratch/36caf938433a/toolchain/wine-root/opt/wine-stable/bin/wine",
+  "synthetic_roundtrips": 9,
+  "input_precision": "RGB8/RGBA8",
+  "codec": "x265 4.3 via libheif 1.23.6",
+  "heic_mode": "lossless full-range RGB/GBR identity, 4:4:4, optional straight alpha",
+  "checks": [
+    "sample-exact RGB and alpha, including hidden RGB at alpha=0",
+    "odd and tiny dimensions",
+    "ICC bytes unchanged",
+    "EXIF TIFF bytes unchanged",
+    "8-bit depth and identity matrix",
+    "independent concurrent encoders",
+    "linear white alpha compositing",
+    "invalid ICC/buffer rejection",
+    "deterministic sRGB ICC serialization"
+  ],
+  "source_sha256": "1597de07361fb757e64b6949c441da1cf559a29447a9f4d04223cb1f940cafaa",
+  "header_sha256": "5a385792170a1f2d8260595fb0b9c4379bbd2527711e7d2904613c479f65f410",
+  "test_sha256": "8b324ad18ae4d0b4aeb5aba619e86369023d7e7a98c9c1edce4ad7b72a130dfc",
+  "binary_sha256": "538e937251f2e9fb37faf5adf291a5c80373029ab2fab01c23ca791c905c9cbe",
+  "native_libraries": {
+    "libheif.a": "e9b0dc47366ff3c331a5d6cf7049fdd86215cfcebbc5602f2717ec7ebc6d65c1",
+    "libde265.a": "4a43f0f8c8729abd627f5184c2375edb102c9a36139f04e9c445b330d442ba71",
+    "libx265.a": "366708448966e097dcddb686f303c1849afac386982b844d0c087776b55d32e3",
+    "liblcms2.a": "70685ab72d26276c7e5d9e6df7396fcb244140ad447842425d7a54ca0a155ed2"
+  },
+  "system_dll_imports": [
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-locale-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-private-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "KERNEL32.dll",
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-filesystem-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "api-ms-win-crt-multibyte-l1-1-0.dll",
+    "ADVAPI32.dll"
+  ],
+  "stdout": "PASS roundtrip 1x1 channels=3 icc=588 heic=1251 flags=1024 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 1x1 channels=4 icc=588 heic=1543 flags=1536 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 2x3 channels=4 icc=588 heic=2100 flags=1544 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 29x100 channels=4 icc=568 heic=13379 flags=1536 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 128x128 channels=3 icc=588 heic=49024 flags=1024 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 257x193 channels=4 icc=568 heic=159664 flags=1536 exact_samples=yes exif=unchanged matrix=GBR444\nPASS roundtrip 73x67 channels=3 icc=588 heic=16425 flags=1032 exact_samples=yes exif=unchanged matrix=GBR444\nPASS linear-alpha flattening, opaque samples, invalid-ICC/buffer rejection, deterministic ICC\nPASS concurrent independent HEIC encoders and RGBA decoders\nPASS HEIC V2: 9 synthetic RGB/RGBA lossless roundtrips including alpha=0 hidden color, odd/tiny sizes, ICC and EXIF\n",
+  "stderr": "x265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\nx265 [error]: unable to set thread affinity for NUMA node mask\n",
+  "limits": "This is a synthetic codec/FFI test, not a Windows GUI or display-calibration test. HEIC losslessness applies to supplied 8-bit pixels after any source HDR/precision conversion."
+}

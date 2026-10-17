@@ -1,0 +1,63 @@
+{
+  "application": "Roshan Converter",
+  "version": "2.0.0",
+  "release_sha256": "d7ce29f1538b5054144e815610eb57be591ce4f048a11dcd01efa33c576c956d",
+  "release_bytes": 24910336,
+  "result": "requested conversion and GUI checks passed, with recorded environment limits",
+  "default_language": "English",
+  "persian_toggle": true,
+  "developer_website": "https://peymaanabedinpour.ir",
+  "verification": {
+    "windows_image_matrix": {
+      "directed_pairs": 12,
+      "cli_runs": 68,
+      "groups": 24,
+      "report": "images-v2-windows.json"
+    },
+    "windows_video_matrix": {
+      "directed_pairs": 12,
+      "checks": 27,
+      "cli_batches": 13,
+      "report": "videos-v2-windows.json"
+    },
+    "final_exact_executable": {
+      "image_smoke": "images-v2-windows-final.json",
+      "video_smoke": "videos-v2-windows-final.json",
+      "gui": "gui-v2.json"
+    },
+    "rust_unit_tests": {
+      "linux": 6,
+      "windows": 7
+    }
+  },
+  "native_gui_checked": [
+    "English default and Persian RTL toggle",
+    "native multi-file picker",
+    "drop counts and real modal action",
+    "mixed image/video conversion",
+    "corrupt-input isolation",
+    "Persian warning/error text",
+    "format and metadata requeue",
+    "cancel after encoded progress, retry, and intact original bytes",
+    "About credit and corrected .ir domain"
+  ],
+  "root_visual_review": "Actual final English/Persian/About/drop screenshots reviewed; no clipped compact Persian button labels observed.",
+  "cleanup_observation": "Final GUI cancellations and retry left no partial within the same live execution. Some Wine/executor sessions restored temporary artifacts after the enclosing command ended; the reports distinguish this observation and the inferred environment cause.",
+  "limits": [
+    "Physical Windows hardware was not available; Windows PE executed under Wine11.",
+    "Physical Explorer drag gesture and multi-monitor DPI transitions were not tested; native drop payload and modal were.",
+    "JPEG and necessary video/audio re-encoding remain lossy; precision, HDR, alpha and animation boundaries are documented.",
+    "Durable cleanup across the test-environment command boundary is not established."
+  ],
+  "reports_sha256": {
+    "gui-v2.json": "0d56d77a4744bc9457f1b7a52ae4d90d8f5b7672b4d7c9059c34a52e42f902fd",
+    "images-v2-windows-final.json": "04840bfa6fcf51ea3e2539fef41abc2ceb6d2014993da646a8810bb43f226cb4",
+    "images-v2-windows.json": "4cf3afcd6e77fdacdb220f60ec04691e09e9cab65b2130bad81055d32c3d9107",
+    "images-v2.json": "d16b72f48732e26ed8a9eaa46fd2cdc17f78771f682987779c52b28c5a0a443a",
+    "release-v2.json": "aeb026fb1070e02a962ffd5a67413d703ce3d855e1378dff91febe6712dee876",
+    "rust-unit-tests-v2.json": "aa0a2ef85395a8ae625bd61da0cfc38f522066aa8ac892ae9ae74767d86a6105",
+    "rust-unit-tests-windows-v2.json": "ba447be9d07e025e3745bef4990f82add9c89f448d2855db97322ba6815a967d",
+    "videos-v2-windows-final.json": "8e221305fd8a885a7ca4cddd18792c590359b1f76d218be933ab28cc94173f89",
+    "videos-v2-windows.json": "08f95edd79c5df1e8345aba7a29793b9aa032c1b79759b792161583172326b50"
+  }
+}

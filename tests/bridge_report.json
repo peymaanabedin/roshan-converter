@@ -1,0 +1,186 @@
+{
+  "result": "passed",
+  "decoder_version": "1.23.6",
+  "input_files": 14,
+  "decoded_still_images": 16,
+  "color_math": "PASS: PQ, HLG, gamut matrices, ICC transfer curve, premultiplied linear alpha and straight RGBA, 10-bit range, and neutral HDR RGB/RGBA tone mapping.",
+  "images": [
+    {
+      "file": "example.heic",
+      "frame": 1,
+      "count": 2,
+      "width": 1280,
+      "height": 854,
+      "flags": 8,
+      "pixels_len": 3279360,
+      "icc_len": 588,
+      "exif_len": 0
+    },
+    {
+      "file": "example.heic",
+      "frame": 2,
+      "count": 2,
+      "width": 1280,
+      "height": 854,
+      "flags": 8,
+      "pixels_len": 3279360,
+      "icc_len": 588,
+      "exif_len": 0
+    },
+    {
+      "file": "clap_cropped.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 64,
+      "height": 64,
+      "flags": 0,
+      "pixels_len": 12288,
+      "icc_len": 584,
+      "exif_len": 0
+    },
+    {
+      "file": "rainbow-451x461.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 451,
+      "height": 461,
+      "flags": 0,
+      "pixels_len": 623733,
+      "icc_len": 672,
+      "exif_len": 0
+    },
+    {
+      "file": "with-alpha-512x512.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 512,
+      "height": 512,
+      "flags": 2,
+      "pixels_len": 786432,
+      "icc_len": 672,
+      "exif_len": 0
+    },
+    {
+      "file": "conformance_window_padding.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 1,
+      "height": 1,
+      "flags": 40,
+      "pixels_len": 3,
+      "icc_len": 584,
+      "exif_len": 76
+    },
+    {
+      "file": "RGB_10__128x128.heif",
+      "frame": 1,
+      "count": 1,
+      "width": 128,
+      "height": 128,
+      "flags": 12,
+      "pixels_len": 49152,
+      "icc_len": 588,
+      "exif_len": 0
+    },
+    {
+      "file": "RGBA_12__29x100.heif",
+      "frame": 1,
+      "count": 1,
+      "width": 29,
+      "height": 100,
+      "flags": 14,
+      "pixels_len": 8700,
+      "icc_len": 588,
+      "exif_len": 0
+    },
+    {
+      "file": "arrow.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 3024,
+      "height": 4032,
+      "flags": 32,
+      "pixels_len": 36578304,
+      "icc_len": 548,
+      "exif_len": 1730
+    },
+    {
+      "file": "spatial_photo.heic",
+      "frame": 1,
+      "count": 2,
+      "width": 2560,
+      "height": 2560,
+      "flags": 0,
+      "pixels_len": 19660800,
+      "icc_len": 536,
+      "exif_len": 606
+    },
+    {
+      "file": "spatial_photo.heic",
+      "frame": 2,
+      "count": 2,
+      "width": 2560,
+      "height": 2560,
+      "flags": 0,
+      "pixels_len": 19660800,
+      "icc_len": 536,
+      "exif_len": 460
+    },
+    {
+      "file": "guitar_cw90.hif",
+      "frame": 1,
+      "count": 1,
+      "width": 4672,
+      "height": 7008,
+      "flags": 52,
+      "pixels_len": 98224128,
+      "icc_len": 584,
+      "exif_len": 40960
+    },
+    {
+      "file": "cat.hif",
+      "frame": 1,
+      "count": 1,
+      "width": 4240,
+      "height": 2832,
+      "flags": 36,
+      "pixels_len": 36023040,
+      "icc_len": 584,
+      "exif_len": 40960
+    },
+    {
+      "file": "xiaomi.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 2592,
+      "height": 1944,
+      "flags": 8,
+      "pixels_len": 15116544,
+      "icc_len": 588,
+      "exif_len": 192182
+    },
+    {
+      "file": "DSC06175_hdr.heic",
+      "frame": 1,
+      "count": 1,
+      "width": 4240,
+      "height": 2832,
+      "flags": 37,
+      "pixels_len": 36023040,
+      "icc_len": 588,
+      "exif_len": 786
+    },
+    {
+      "file": "7949_mirror_horizontal_rotate_270_cw.HEIC",
+      "frame": 1,
+      "count": 1,
+      "width": 1209,
+      "height": 1547,
+      "flags": 0,
+      "pixels_len": 5610969,
+      "icc_len": 3144,
+      "exif_len": 7834
+    }
+  ],
+  "limits": "This verifies the native Linux codec/bridge and pixel math; it is not a Windows UI or display-calibration test."
+}
